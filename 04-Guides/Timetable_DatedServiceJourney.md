@@ -1,11 +1,21 @@
 
 ### Timetable using DatedServiceJourney
 A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
-    
+
+### PublicationDelivery
+![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png.png)
+#### Description
+When exhange data, this is done inside frames, and always inside PublicationDelivery.
+TODO: description of the frames and content
+
 ### DatedServiceJourney
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
-
+| XML-type | Name | Type | Cardinality 
+|-|-|-|:-:|
+| Attribute |<b><a name="dated-service-journey-id"></a>Id | ObjectIdType |<font color="red"> 1:1|
+| Element |<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1|
+| List |<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1|
 ```xml
 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example">
     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1" version="1"/>
