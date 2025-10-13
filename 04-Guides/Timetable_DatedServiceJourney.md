@@ -11,11 +11,11 @@ TODO: description of the frames and content
 ### DatedServiceJourney
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
-| XML-type | Name | Type | Cardinality 
-|-|-|-|:-:|
-| Attribute |<b><a name="dated-service-journey-id"></a>Id | ObjectIdType |<font color="red"> 1:1|
-| Element |<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1|
-| List |<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1|
+| XML-type | Name | Type | Cardinality | Description
+|-|-|-|:-:|-|
+| Attribute |<b><a name="dated-service-journey-id"></a>Id | ObjectIdType |<font color="red"> 1:1|ID
+| Element |<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1| Reference to the ServiceJourney
+| List |<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1|Refernce to an operating day
 ```xml
 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example">
     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1" version="1"/>
