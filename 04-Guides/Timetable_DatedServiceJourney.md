@@ -3,7 +3,7 @@
 A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
 
 ### PublicationDelivery
-![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png.png)
+![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png)
 #### Description
 When exhange data, this is done inside frames, and always inside PublicationDelivery.
 TODO: description of the frames and content
