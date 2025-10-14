@@ -3,6 +3,8 @@
 A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
 
 ### PublicationDelivery
+The delvivery is packed in one zip file with a shared file and one file per line. The picture shows which frames and objects inside that should be pressent in each file, the shared one and file per line.
+
 ![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png.png)
 #### Description
 When exhange data, this is done inside frames, and always inside PublicationDelivery.
