@@ -8,7 +8,56 @@ The delvivery is packed in one zip file with a shared file and one file per line
 ![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png)
 #### Description
 When exhange data, this is done inside frames, and always inside PublicationDelivery.
-TODO: description of the frames and content
+
+#### Frames in shared file
+<details>
+<summary>
+  <b>PublicationDelivery</b>
+</summary>
+Table of fields and frames
+</details>
+<details>
+<summary>
+  <b>ResourceFrame</b>
+</summary>
+All objects in this frame
+</details>
+<details>
+<summary>
+  <b>ServiceFrame</b>
+</summary>
+All objects in this frame
+</details>
+<details>
+<summary>
+  <b>ServiceCaledarFrame</b>
+</summary>
+All objects in this frame
+</details>
+
+#### Frames in Linefile
+<details>
+<summary>
+  <b>PublicationDelivery</b>
+</summary>
+Table of fields and frames
+</details>
+<details>
+<summary>
+  <b>ServiceFrame</b>
+</summary>
+All objects in this frame
+</details>
+<details>
+<summary>
+  <b>TimetableFrame</b>
+</summary>
+All objects in this frame
+</details>
+
+<br/>
+
+# TODO: Move to above or??
 
 ### DatedServiceJourney
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
