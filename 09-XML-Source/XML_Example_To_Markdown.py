@@ -29,6 +29,7 @@ def xmlToMarkdown(File, OutputPath, RemovePath):
         for y in x:
             markdownFile.write(y.text)
             markdownFile.write('\n')
+            root.remove(y)    
     except:
         pass
     # Find all elements with attribute 'nameOfClass'
@@ -65,9 +66,12 @@ def xmlToMarkdown(File, OutputPath, RemovePath):
         cleaned_xml = '\n'.join(filtered_lines)
 
         markdown_lines.append('```xml\n' + cleaned_xml + "\n```\n") 
+    markdown_lines.append('[XML Example](' + OutputPath + "XML\\" + str(File).replace(RemovePath,'') + ')')
 
     for x in markdown_lines:
         markdownFile.write(x)
+    xmlName = str(File).replace(RemovePath,'')
+    tree.write(OutputPath + "XML\\" + xmlName, encoding="utf-8", xml_declaration=True)
 
 if __name__ == "__main__":
     xmlToMarkdown("09-XML\guides\Timetable_DatedServiceJourney.xml")

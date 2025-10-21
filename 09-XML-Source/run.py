@@ -5,7 +5,7 @@
 import os
 from XML_Example_To_Markdown import xmlToMarkdown as XtM
 
-xmlPath = '09-XML\\'
+xmlPath = '09-XML-Source\\'
 for example in os.listdir(xmlPath):
     if example == 'guides':
         for x in os.listdir(xmlPath + example):
