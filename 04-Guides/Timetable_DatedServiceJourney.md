@@ -182,4 +182,4 @@ Stating the Date connected to each OperatingDay object
     </organisations>
 </ResourceFrame>
 ```
-[XML Example](XML\Timetable_DatedServiceJourney.xml)
+[XML Example](XML/Timetable_DatedServiceJourney.xml)
