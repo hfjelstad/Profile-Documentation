@@ -1,0 +1,8 @@
+# Introduction
+This guide describe the content of the shared file within zip file with timetable data which contain one shared file and one per line.
+
+**TODO** More info about this delivery!
+
+Description of the two types of files is done in seperate documents:
+- [_Shared_File](/04-Guides/ExhangeTimetableUsingDatedServiceJourney/UsingDatedServiceJourney_SharedFile.md)
+- [_Line_File](/04-Guides/ExhangeTimetableUsingDatedServiceJourney/UsingDatedServiceJourney_LineFile.md)
