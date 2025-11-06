@@ -19,7 +19,6 @@ def xmlToMarkdown(File, OutputPath, RemovePath):
     tree = ET.parse(File)
     root = tree.getroot()
     remove_namespaces(root)
-    #markdownPath = OutputPath
     markdownFileName = str(File).replace('.xml','.md').replace(RemovePath,'')
     print(markdownFileName)
     markdownFile = open(OutputPath + markdownFileName, "w")

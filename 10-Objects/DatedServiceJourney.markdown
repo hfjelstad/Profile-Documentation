@@ -1,5 +1,3 @@
-This content is added from a manually generated file: 
-
 # DatedServiceJourney
   
 >[!NOTE]
@@ -76,30 +74,3 @@ This content is added from a manually generated file:
 
 >[!TIP]
 >[DatedServiceJourney](#dated-service-journey-id)
-
-
- --------------------------- 
-
-
-
- This content is automaticly generated using NAP as source: 
-
-
-
-### DatedServiceJourney
-
-```
-# NeTEx annotation: 
-A particular journey of a vehicle on a particular OPERATING DAY including all modifications possibly decided by the control staff. 
-
-The VIEW includes derived ancillary data from referenced entities.
-```
-
-| Type | Name | SubElement | NeTEx annotation | 
-| --- | --- | --- | --- | 
-| Attribute | version |  |  | 
-| Attribute | id |  |  | 
-| Element | ServiceAlteration |  |  | 
-| Reference | [ServiceJourneyRef](10-Objects\ServiceJourney.md) |  | Reference to a SERVICE JOURNEY. | 
-| Reference | [OperatingDayRef](10-Objects\OperatingDay.md) |  | Reference to an OPERATING DAY. | 
-| Reference | [DatedServiceJourneyRef](10-Objects\DatedServiceJourney.md) |  |  | 
