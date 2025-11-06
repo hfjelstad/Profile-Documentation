@@ -151,5 +151,5 @@ A specialization of TARIFF ZONE to include FARE SECTIONs.
 | Reference | [AuthorityRef](Authority.md) |  | Reference to an AUTHORITY. | 
 | List | ValidBetween | FromDate | OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
-| List | neighbours | FareZoneRef |  | 
-| List | members | ScheduledStopPointRef |  | 
+| List | neighbours | [FareZoneRef](FareZone.md) |  | 
+| List | members | [ScheduledStopPointRef](ScheduledStopPoint.md) |  | 

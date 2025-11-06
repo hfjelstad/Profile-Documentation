@@ -82,4 +82,4 @@ Example of a zone group with purposeOfGrouping (not all zones are included and s
 | Attribute | id |  |  | 
 | Attribute | created |  |  | 
 | List | ValidBetween | FromDate | OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. | 
-| List | members | TariffZoneRef |  | 
+| List | members | [TariffZoneRef](TariffZone.md) |  | 

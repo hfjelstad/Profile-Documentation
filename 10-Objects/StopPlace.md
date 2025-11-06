@@ -55,8 +55,8 @@ Version of a named place where public transport may be accessed. May be a buildi
 | Reference | [ParentSiteRef](ParentSite.md) |  |  | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
 | List | Centroid | Location |  | 
-| List | tariffZones | TariffZoneRef |  | 
+| List | tariffZones | [TariffZoneRef](TariffZone.md) |  | 
 | List | quays | Quay |  | 
 | List | ValidBetween | FromDate | OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. | 
 | List | alternativeNames | AlternativeName |  | 
-| List | adjacentSites | SiteRef |  | 
+| List | adjacentSites | [SiteRef](Site.md) |  | 

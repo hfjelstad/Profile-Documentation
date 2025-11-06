@@ -21,7 +21,7 @@ The VIEW includes derived ancillary data from referenced entities.
 | Reference | [OperatorRef](Operator.md) |  | Reference to an OPERATOR. | 
 | Reference | [LineRef](Line.md) |  | Reference to a LINE. | 
 | Reference | [FlexibleLineRef](FlexibleLine.md) |  | Reference to a FLEXIBLE LINE. | 
-| List | dayTypes | DayTypeRef |  | 
+| List | dayTypes | [DayTypeRef](DayType.md) |  | 
 | List | passingTimes | TimetabledPassingTime |  | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
 | List | TransportSubmode | BusSubmode | A submode of a Public Transport MODE. | 

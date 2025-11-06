@@ -151,7 +151,11 @@ if __name__ == "__main__":
                                 definition = XA(z)
                             except:
                                 pass
-                            markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + definition + ' |' + ' \n')
+                            if 'Ref' in last:
+                                link = '[' + last + '](' + last[:-3] + '.md' + ')'
+                                markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                            else:
+                                markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + definition + ' |' + ' \n')
                     except:
                         pass
             elif y == 'Reference':

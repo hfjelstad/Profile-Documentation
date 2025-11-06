@@ -16,5 +16,5 @@ Group of STOP PLACEs.
 | Attribute | id |  |  | 
 | Reference | [PurposeOfGroupingRef](PurposeOfGrouping.md) |  | Reference to a PURPOSE OF GROUPING. | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
-| List | members | StopPlaceRef |  | 
+| List | members | [StopPlaceRef](StopPlace.md) |  | 
 | List | Centroid | Location |  | 
