@@ -27,14 +27,14 @@ def extractor(File):
                 if x == 'id':
                     if strip_namespace(c.tag) not in objects:
                         objects.append(strip_namespace(c.tag))
-        """
+        
         if c.attrib and "Frame" in c.tag:
             if strip_namespace(c.tag) not in objects:
                         objects.append(strip_namespace(c.tag))
             #print(strip_namespace(c.tag))
             #for gc in c:
             #    print(strip_namespace(gc.tag))
-        """
+        
     #print(objects)
     for all in objects:
         attributes = []
@@ -125,53 +125,97 @@ if __name__ == "__main__":
         """
     for x in profileDict:
         fileName = x + '.md'
-        markdownFile = open('10-Objects\\' + fileName, 'w')
-        try:
-            for file in glob.glob("10-Objects/"+ x +".markdown"):
-                markdownFile.write('This content is added from a manually generated file: \n\n')
-                for line in open(file, 'r'):      
-                    markdownFile.write(line)
-                
-                markdownFile.write('\n\n --------------------------- \n\n')
-                markdownFile.write('\n\n This content is automaticly generated using NAP as source: \n\n')
-        except:
-            pass
-        markdownFile.write(('\n\n'))
-        markdownFile.write('### ' + x + '\n\n')
-        markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
-        markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
-        markdownFile.write('| --- | --- | --- | --- |' + ' \n')
-        for y in profileDict[x]:
-            if y == 'List':
-                for z in profileDict[x][y]:
-                    try:
-                        for last in profileDict[x][y][z]:
-                            definition = ''
-                            try:
-                                definition = XA(z)
-                            except:
-                                pass
-                            if 'Ref' in last:
-                                link = '[' + last + '](' + last[:-3] + '.md' + ')'
-                                markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
-                            else:
-                                markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + definition + ' |' + ' \n')
-                    except:
-                        pass
-            elif y == 'Reference':
-                for z in profileDict[x][y]:
-                    referenceDefinition = ''
-                    link = '[' + z + '](' + z[:-3] + '.md' + ')'
-                    try:
-                        referenceDefinition = XA(z)
-                    except:
-                        pass
-                    markdownFile.write('| ' + y + ' | ' + link + ' | ' + ' | ' + referenceDefinition + ' |' + ' \n')
-            else:
-                for z in profileDict[x][y]:
-                    definition = ''
-                    try:
-                        definition = XA(z)
-                    except:
-                        pass
-                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + definition + ' |' + ' \n')
+        if 'Frame' in x:
+            markdownFile = open('01-Frames\\' + fileName, 'w')
+            try:
+                for file in glob.glob("01-Frames/"+ x +".markdown"):
+                    markdownFile.write('This content is added from a manually generated file: \n\n')
+                    for line in open(file, 'r'):      
+                        markdownFile.write(line)
+                    
+                    markdownFile.write('\n\n --------------------------- \n\n')
+                    markdownFile.write('\n\n This content is automaticly generated using NAP as source: \n\n')
+            except:
+                pass
+            markdownFile.write(('\n\n'))
+            markdownFile.write('### ' + x + '\n\n')
+            markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
+            markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
+            markdownFile.write('| --- | --- | --- | --- |' + ' \n')
+            for y in profileDict[x]:
+                if y == 'List':
+                    for z in profileDict[x][y]:
+                        try:
+                            for last in profileDict[x][y][z]:
+                                definition = ''
+                                try:
+                                    definition = XA(last)
+                                except:
+                                    pass
+                                if 'Frame' in last:
+                                    link = '[' + last + '](' + last + '.md' + ')'
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                                else:
+                                    link = '[' + last + '](' + '/10-Objects/' + last + '.md' + ')'
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                        except:
+                            pass
+                else:
+                    for z in profileDict[x][y]:
+                        definition = ''
+                        try:
+                            definition = XA(z)
+                        except:
+                            pass
+                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + definition + ' |' + ' \n')
+        else:           
+            markdownFile = open('10-Objects\\' + fileName, 'w')
+            try:
+                for file in glob.glob("10-Objects/"+ x +".markdown"):
+                    markdownFile.write('This content is added from a manually generated file: \n\n')
+                    for line in open(file, 'r'):      
+                        markdownFile.write(line)
+                    
+                    markdownFile.write('\n\n --------------------------- \n\n')
+                    markdownFile.write('\n\n This content is automaticly generated using NAP as source: \n\n')
+            except:
+                pass
+            markdownFile.write(('\n\n'))
+            markdownFile.write('### ' + x + '\n\n')
+            markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
+            markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
+            markdownFile.write('| --- | --- | --- | --- |' + ' \n')
+            for y in profileDict[x]:
+                if y == 'List':
+                    for z in profileDict[x][y]:
+                        try:
+                            for last in profileDict[x][y][z]:
+                                definition = ''
+                                try:
+                                    definition = XA(z)
+                                except:
+                                    pass
+                                if 'Ref' in last:
+                                    link = '[' + last + '](' + last[:-3] + '.md' + ')'
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                                else:
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + definition + ' |' + ' \n')
+                        except:
+                            pass
+                elif y == 'Reference':
+                    for z in profileDict[x][y]:
+                        referenceDefinition = ''
+                        link = '[' + z + '](' + z[:-3] + '.md' + ')'
+                        try:
+                            referenceDefinition = XA(z)
+                        except:
+                            pass
+                        markdownFile.write('| ' + y + ' | ' + link + ' | ' + ' | ' + referenceDefinition + ' |' + ' \n')
+                else:
+                    for z in profileDict[x][y]:
+                        definition = ''
+                        try:
+                            definition = XA(z)
+                        except:
+                            pass
+                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + definition + ' |' + ' \n')
