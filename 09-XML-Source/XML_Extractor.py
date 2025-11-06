@@ -157,7 +157,7 @@ if __name__ == "__main__":
             elif y == 'Reference':
                 for z in profileDict[x][y]:
                     referenceDefinition = ''
-                    link = '[' + z + '](' + '10-Objects\\' + z[:-3] + '.md' + ')'
+                    link = '[' + z + '](' + z[:-3] + '.md' + ')'
                     try:
                         referenceDefinition = XA(z)
                     except:

@@ -13,7 +13,7 @@ An ordered list of located POINTs defining one single path through the Road (or 
 | Attribute | id |  |  | 
 | Element | Name |  |  | 
 | Element | ShortName |  |  | 
-| Reference | [LineRef](10-Objects\Line.md) |  | Reference to a LINE. | 
-| Reference | [FlexibleLineRef](10-Objects\FlexibleLine.md) |  | Reference to a FLEXIBLE LINE. | 
-| Reference | [InverseRouteRef](10-Objects\InverseRoute.md) |  |  | 
+| Reference | [LineRef](Line.md) |  | Reference to a LINE. | 
+| Reference | [FlexibleLineRef](FlexibleLine.md) |  | Reference to a FLEXIBLE LINE. | 
+| Reference | [InverseRouteRef](InverseRoute.md) |  |  | 
 | List | pointsInSequence | PointOnRoute |  | 

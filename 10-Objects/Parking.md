@@ -14,7 +14,7 @@ A named place where Parking may be accessed. May be a building complex (e.g. a s
 | Attribute | modification |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [ParentSiteRef](10-Objects\ParentSite.md) |  |  | 
+| Reference | [ParentSiteRef](ParentSite.md) |  |  | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
 | List | Centroid | Location |  | 
 | List | parkingProperties | ParkingProperties |  | 

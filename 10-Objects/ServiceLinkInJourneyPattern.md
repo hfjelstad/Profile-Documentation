@@ -12,4 +12,4 @@ The use of a SERVICE LINK in a specified order. within a JOURNEY PATTERN or SERV
 | Attribute | order |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [ServiceLinkRef](10-Objects\ServiceLink.md) |  | Reference to a SERVICE LINK. | 
+| Reference | [ServiceLinkRef](ServiceLink.md) |  | Reference to a SERVICE LINK. | 

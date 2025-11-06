@@ -12,4 +12,4 @@ A reference to a ROUTE POINT used to define a ROUTE with its order on that ROUTE
 | Attribute | order |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [RoutePointRef](10-Objects\RoutePoint.md) |  | Reference to a ROUTE POINT. | 
+| Reference | [RoutePointRef](RoutePoint.md) |  | Reference to a ROUTE POINT. | 

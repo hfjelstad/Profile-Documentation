@@ -17,10 +17,10 @@ The VIEW includes derived ancillary data from referenced entities.
 | Element | PrivateCode |  | A private code that uniquely identifies the element.  May be used for inter-operating with other (legacy) systems. | 
 | Element | Description |  |  | 
 | Element | TransportMode |  |  | 
-| Reference | [JourneyPatternRef](10-Objects\JourneyPattern.md) |  | Reference to a JOURNEY PATTERN. | 
-| Reference | [OperatorRef](10-Objects\Operator.md) |  | Reference to an OPERATOR. | 
-| Reference | [LineRef](10-Objects\Line.md) |  | Reference to a LINE. | 
-| Reference | [FlexibleLineRef](10-Objects\FlexibleLine.md) |  | Reference to a FLEXIBLE LINE. | 
+| Reference | [JourneyPatternRef](JourneyPattern.md) |  | Reference to a JOURNEY PATTERN. | 
+| Reference | [OperatorRef](Operator.md) |  | Reference to an OPERATOR. | 
+| Reference | [LineRef](Line.md) |  | Reference to a LINE. | 
+| Reference | [FlexibleLineRef](FlexibleLine.md) |  | Reference to a FLEXIBLE LINE. | 
 | List | dayTypes | DayTypeRef |  | 
 | List | passingTimes | TimetabledPassingTime |  | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 

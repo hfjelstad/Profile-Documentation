@@ -12,5 +12,5 @@ The assignment of a NOTICE showing an exception in a JOURNEY PATTERN, a COMMON S
 | Attribute | order |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [NoticeRef](10-Objects\Notice.md) |  | Reference to a NOTICE i.e. footnote, note,  announcement or other informational text element. | 
-| Reference | [NoticedObjectRef](10-Objects\NoticedObject.md) |  |  | 
+| Reference | [NoticeRef](Notice.md) |  | Reference to a NOTICE i.e. footnote, note,  announcement or other informational text element. | 
+| Reference | [NoticedObjectRef](NoticedObject.md) |  |  | 

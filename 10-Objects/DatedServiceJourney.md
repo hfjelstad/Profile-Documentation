@@ -100,6 +100,6 @@ The VIEW includes derived ancillary data from referenced entities.
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
 | Element | ServiceAlteration |  |  | 
-| Reference | [ServiceJourneyRef](10-Objects\ServiceJourney.md) |  | Reference to a SERVICE JOURNEY. | 
-| Reference | [OperatingDayRef](10-Objects\OperatingDay.md) |  | Reference to an OPERATING DAY. | 
-| Reference | [DatedServiceJourneyRef](10-Objects\DatedServiceJourney.md) |  |  | 
+| Reference | [ServiceJourneyRef](ServiceJourney.md) |  | Reference to a SERVICE JOURNEY. | 
+| Reference | [OperatingDayRef](OperatingDay.md) |  | Reference to an OPERATING DAY. | 
+| Reference | [DatedServiceJourneyRef](DatedServiceJourney.md) |  |  | 

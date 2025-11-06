@@ -12,6 +12,6 @@ A LINK between an ordered pair of STOP POINTs.  Service links are directional - 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
 | Element | Distance |  |  | 
-| Reference | [FromPointRef](10-Objects\FromPoint.md) |  |  | 
-| Reference | [ToPointRef](10-Objects\ToPoint.md) |  |  | 
+| Reference | [FromPointRef](FromPoint.md) |  |  | 
+| Reference | [ToPointRef](ToPoint.md) |  |  | 
 | List | projections | LinkSequenceProjection |  | 

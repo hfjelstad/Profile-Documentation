@@ -11,4 +11,4 @@ TIMETABLED PASSING TIME at TIMING POINT.
 | --- | --- | --- | --- | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [StopPointInJourneyPatternRef](10-Objects\StopPointInJourneyPattern.md) |  | Reference to a STOP POINT IN SEQUENCE. If given by context does not need to be stated. | 
+| Reference | [StopPointInJourneyPatternRef](StopPointInJourneyPattern.md) |  | Reference to a STOP POINT IN SEQUENCE. If given by context does not need to be stated. | 

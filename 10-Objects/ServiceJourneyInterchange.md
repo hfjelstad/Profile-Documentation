@@ -16,7 +16,7 @@ The scheduled possibility for transfer of passengers between two SERVICE JOURNEY
 | Element | MaximumWaitTime |  |  | 
 | Element | Planned |  |  | 
 | Element | Advertised |  |  | 
-| Reference | [FromPointRef](10-Objects\FromPoint.md) |  |  | 
-| Reference | [ToPointRef](10-Objects\ToPoint.md) |  |  | 
-| Reference | [FromJourneyRef](10-Objects\FromJourney.md) |  |  | 
-| Reference | [ToJourneyRef](10-Objects\ToJourney.md) |  |  | 
+| Reference | [FromPointRef](FromPoint.md) |  |  | 
+| Reference | [ToPointRef](ToPoint.md) |  |  | 
+| Reference | [FromJourneyRef](FromJourney.md) |  |  | 
+| Reference | [ToJourneyRef](ToJourney.md) |  |  | 

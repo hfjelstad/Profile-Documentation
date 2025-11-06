@@ -14,6 +14,6 @@ An ordered list of SCHEDULED STOP POINTs and TIMING POINTs on a single ROUTE, de
 | Element | Name |  |  | 
 | Element | Description |  |  | 
 | Element | PrivateCode |  | A private code that uniquely identifies the element.  May be used for inter-operating with other (legacy) systems. | 
-| Reference | [RouteRef](10-Objects\Route.md) |  | Reference to a ROUTE. | 
+| Reference | [RouteRef](Route.md) |  | Reference to a ROUTE. | 
 | List | pointsInSequence | StopPointInJourneyPattern |  | 
 | List | linksInSequence | ServiceLinkInJourneyPattern |  | 

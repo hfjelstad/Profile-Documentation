@@ -15,7 +15,7 @@ A company  providing public transport services.
 | Element | Name |  |  | 
 | Element | LegalName |  |  | 
 | Element | OrganisationType |  |  | 
-| Reference | [BrandingRef](10-Objects\Branding.md) |  | Reference to a BRANDING. | 
+| Reference | [BrandingRef](Branding.md) |  | Reference to a BRANDING. | 
 | List | ContactDetails | Phone |  | 
 | List | ContactDetails | Email |  | 
 | List | ContactDetails | Url |  | 

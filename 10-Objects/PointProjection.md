@@ -11,5 +11,5 @@ An oriented correspondence from one POINT of a source layer, onto a entity in a 
 | --- | --- | --- | --- | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [ProjectedPointRef](10-Objects\ProjectedPoint.md) |  |  | 
-| Reference | [ProjectToPointRef](10-Objects\ProjectToPoint.md) |  |  | 
+| Reference | [ProjectedPointRef](ProjectedPoint.md) |  |  | 
+| Reference | [ProjectToPointRef](ProjectToPoint.md) |  |  | 

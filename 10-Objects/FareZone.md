@@ -148,7 +148,7 @@ A specialization of TARIFF ZONE to include FARE SECTIONs.
 | Element | gis:Polygon |  |  | 
 | Element | ZoneTopology |  |  | 
 | Element | ScopingMethod |  |  | 
-| Reference | [AuthorityRef](10-Objects\Authority.md) |  | Reference to an AUTHORITY. | 
+| Reference | [AuthorityRef](Authority.md) |  | Reference to an AUTHORITY. | 
 | List | ValidBetween | FromDate | OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
 | List | neighbours | FareZoneRef |  | 

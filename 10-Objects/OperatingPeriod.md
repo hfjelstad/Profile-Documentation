@@ -13,5 +13,5 @@ A continuous interval of time between two OPERATING DAYs which will be used to d
 | Attribute | id |  |  | 
 | Element | FromDate |  |  | 
 | Element | ToDate |  |  | 
-| Reference | [FromOperatingDayRef](10-Objects\FromOperatingDay.md) |  |  | 
-| Reference | [ToOperatingDayRef](10-Objects\ToOperatingDay.md) |  |  | 
+| Reference | [FromOperatingDayRef](FromOperatingDay.md) |  |  | 
+| Reference | [ToOperatingDayRef](ToOperatingDay.md) |  |  | 

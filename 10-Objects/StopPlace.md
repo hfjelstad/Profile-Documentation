@@ -51,8 +51,8 @@ Version of a named place where public transport may be accessed. May be a buildi
 | Attribute | modification |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [TopographicPlaceRef](10-Objects\TopographicPlace.md) |  |  Reference to a TOPOGRAPHIC PLACE. | 
-| Reference | [ParentSiteRef](10-Objects\ParentSite.md) |  |  | 
+| Reference | [TopographicPlaceRef](TopographicPlace.md) |  |  Reference to a TOPOGRAPHIC PLACE. | 
+| Reference | [ParentSiteRef](ParentSite.md) |  |  | 
 | List | keyList | KeyValue | A list of alternative Key values for an element. | 
 | List | Centroid | Location |  | 
 | List | tariffZones | TariffZoneRef |  | 

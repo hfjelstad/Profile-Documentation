@@ -14,5 +14,5 @@ A named grouping of LINEs under which a Transport network is known.
 | Attribute | changed |  |  | 
 | Element | Name |  |  | 
 | Element | Description |  |  | 
-| Reference | [AuthorityRef](10-Objects\Authority.md) |  | Reference to an AUTHORITY. | 
+| Reference | [AuthorityRef](Authority.md) |  | Reference to an AUTHORITY. | 
 | List | groupsOfLines | GroupOfLines |  | 

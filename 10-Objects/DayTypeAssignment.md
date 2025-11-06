@@ -13,5 +13,5 @@ Associates a DAY TYPE with an OPERATING DAY within a specific Calendar. A specif
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
 | Element | Date |  |  | 
-| Reference | [OperatingPeriodRef](10-Objects\OperatingPeriod.md) |  | Reference to an OPERATING PERIOD. | 
-| Reference | [DayTypeRef](10-Objects\DayType.md) |  | Reference to a DAY TYPE. | 
+| Reference | [OperatingPeriodRef](OperatingPeriod.md) |  | Reference to an OPERATING PERIOD. | 
+| Reference | [DayTypeRef](DayType.md) |  | Reference to a DAY TYPE. | 

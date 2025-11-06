@@ -16,9 +16,9 @@ A group of FLEXIBLE ROUTEs of which is generally known to the public by a simila
 | Element | PublicCode |  |  | 
 | Element | PrivateCode |  | A private code that uniquely identifies the element.  May be used for inter-operating with other (legacy) systems. | 
 | Element | Description |  |  | 
-| Reference | [OperatorRef](10-Objects\Operator.md) |  | Reference to an OPERATOR. | 
-| Reference | [RepresentedByGroupRef](10-Objects\RepresentedByGroup.md) |  |  | 
-| Reference | [BrandingRef](10-Objects\Branding.md) |  | Reference to a BRANDING. | 
+| Reference | [OperatorRef](Operator.md) |  | Reference to an OPERATOR. | 
+| Reference | [RepresentedByGroupRef](RepresentedByGroup.md) |  |  | 
+| Reference | [BrandingRef](Branding.md) |  | Reference to a BRANDING. | 
 | List | TransportSubmode | BusSubmode | A submode of a Public Transport MODE. | 
 | List | TransportSubmode | WaterSubmode | A submode of a Public Transport MODE. | 
 | List | TransportSubmode | TaxiSubmode | A submode of a Public Transport MODE. | 

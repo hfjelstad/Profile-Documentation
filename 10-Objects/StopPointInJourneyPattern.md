@@ -12,8 +12,8 @@ The use of a SCHEDULED STOP POINT in a specified order. within a JOURNEY PATTERN
 | Attribute | order |  |  | 
 | Attribute | version |  |  | 
 | Attribute | id |  |  | 
-| Reference | [ScheduledStopPointRef](10-Objects\ScheduledStopPoint.md) |  | Reference to a SCHEDULED STOP POINT. | 
-| Reference | [DestinationDisplayRef](10-Objects\DestinationDisplay.md) |  | Reference to a DESTINATION DISPLAY. | 
+| Reference | [ScheduledStopPointRef](ScheduledStopPoint.md) |  | Reference to a SCHEDULED STOP POINT. | 
+| Reference | [DestinationDisplayRef](DestinationDisplay.md) |  | Reference to a DESTINATION DISPLAY. | 
 | List | BookingArrangements | BookingContact |  | 
 | List | BookingArrangements | BookingMethods |  | 
 | List | BookingArrangements | BuyWhen |  | 
