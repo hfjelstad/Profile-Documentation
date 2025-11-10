@@ -1,8 +1,6 @@
 
 ### Timetable using DatedServiceJourney
-A description of the minimum information needed for a timtable using DatedServiceJourney as a calendar
-
-
+A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
 
 ### PublicationDelivery:
 - [dataObjects]
@@ -32,7 +30,7 @@ A description of the minimum information needed for a timtable using DatedServic
                     - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 
     
-### DatedServiceJourney
+### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
 
@@ -43,7 +41,7 @@ There can be 1:* DatedServiceJourney to describe the calendar for a peraticular 
 </DatedServiceJourney>
 ```
 ### [ServiceJourney](/10-Objects/ServiceJourney.md)
-A ServiceJourney reference a [JourneyPattern](#JourneyPattern) describing the stopPattern through a network, and describing the passingtimes for each StopPoint in the JourneyPattern.
+A ServiceJourney reference a [JourneyPattern](/10-Objects/JourneyPattern.md) describing the stopPattern through a network, and describing the passingtimes for each StopPoint in the JourneyPattern.
 This ensures that JourneyPatterns can be reused by multiple Journeys
 
 ```xml
@@ -66,7 +64,7 @@ This ensures that JourneyPatterns can be reused by multiple Journeys
     </passingTimes>
 </ServiceJourney>
 ```
-### JourneyPattern
+### [JourneyPattern](/10-Objects/JourneyPattern.md)
 Describing the stopPattern and referencing [ScheduledStopPoints](#ScheduledStopPoints and StopAssignments) that connects the ServiceJourney with [Site](#Site) through the usage of [StopAssignments](#ScheduledStopPoints and StopAssignments)
 
 ```xml
@@ -92,7 +90,7 @@ Describing the stopPattern and referencing [ScheduledStopPoints](#ScheduledStopP
     </pointsInSequence>
 </JourneyPattern>
 ```
-### Route
+### [Route](/10-Objects/Route.md)
 Intended usage is to give a high level description of the Journeys pattern using start location, destination and important via locations
 Having a connection to the [Line](#Line)
 
@@ -111,7 +109,7 @@ Multiple journeys with similar journeypatterns form a Line, this line can have a
     <OperatorRef ref="ENT:Operator:X"/>
 </Line>
 ```
-### OperatingDay
+### [OperatingDay](/10-Objects/OperatingDay.md)
 Stating the Date connected to each OperatingDay object
 
 ```xml
@@ -123,7 +121,7 @@ Stating the Date connected to each OperatingDay object
     </operatingDays>
 </ServiceCalendarFrame>
 ```
-### ScheduledStopPoints and StopAssignments
+### [ScheduledStopPoint](/10-Objects/ScheduledStopPoint.md) and [StopAssignments](/10-Objects/PassengerStopAssignment.md)
 
 ```xml
 <ServiceFrame version="1" id="ENT:ServiceFrame:2">
@@ -154,7 +152,7 @@ Stating the Date connected to each OperatingDay object
     </stopAssignments>
 </ServiceFrame>
 ```
-### Site (StopPlace and quay)
+### Site ([StopPlace](/10-Objects/StopPlace.md) and [Quay](/10-Objects/Quay.md))
 
 ```xml
 <SiteFrame version="1" id="ENT:SiteFrame:1">
@@ -178,7 +176,7 @@ Stating the Date connected to each OperatingDay object
     </stopPlaces>
 </SiteFrame>
 ```
-### Operator
+### [Operator](/10-Objects/Operator.md)
 
 ```xml
 <ResourceFrame version="1" id="ENT:ResourceFrame:1">
@@ -196,4 +194,4 @@ Stating the Date connected to each OperatingDay object
     </organisations>
 </ResourceFrame>
 ```
-[XML Example](/04-Guides/XML/Timetable_DatedServiceJourney.xml)
+[XML Example](\04-Guides\XML\Timetable_DatedServiceJourney.xml)

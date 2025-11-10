@@ -5,24 +5,20 @@
     <dataObjects>
         <TimetableFrame version="1" id="ENT:TimeTableFrame:1">
             <vehicleJourneys>
-                
-                <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example" derivedFromObjectRef="">
+                <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example">
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1" />
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06" />
                 </DatedServiceJourney>
-                
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Cancelled_example">
                     <ServiceAlteration>cancellation</ServiceAlteration>
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1" />
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06" />
                 </DatedServiceJourney>
-                
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Replaced">
 					<ServiceAlteration>replaced</ServiceAlteration>
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1" />
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06" />
                 </DatedServiceJourney>
-                 
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Replacement_Bus_1">
 					<ServiceJourneyRef ref="ENT:ServiceJourney:Example_bus_1" />
                     <replacedJourneys>

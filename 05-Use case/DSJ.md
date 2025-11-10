@@ -5,31 +5,13 @@
 >A particular ServiceJourney of a vehicle on a particular OperatingDay.
 >
 >Operational details of the DatedServiceJourney is derived from a referenced generic ServiceJourney. The generic Journey cannot specify dayTypes when this is defined by the OperatingDay of the DatedServiceJourney.
-
-- PublicationDelivery
-    - [CompositeFrame](/01-Frames/CompositeFrame.md)
-        - validityConditions
-            - [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
-        - codespaces
-            - [Codespace](/10-Objects/Codespace.md)
-        - FrameDefaults
-            - DefaultLocale
-        - frames
-            - [ServiceFrame](/01-Frames/ServiceFrame.md)
-                - [Line](/10-Objects/Line.md)
-                - [Route](/10-Objects/Route.md)
-            - [TimetableFrame](/01-Frames/TimetableFrame.md)
-                - vehicleJourneys
-                    - [ServiceJourney](/10-Objects/ServiceJourney.md)
-                    - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
-
-
-
+        
+    
 ### Normal planned journey 
 Referencing a [ServiceJourney](ServiceJourney.md) adding a OperatingDay to the Journey's calender and a unique identifier for this connection
 
 ```xml
-<DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example" derivedFromObjectRef="">
+<DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example">
     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1"/>
     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
 </DatedServiceJourney>
@@ -64,4 +46,4 @@ The replacement service uses DatedServiceJourneyRef to tie together with the ori
     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
 </DatedServiceJourney>
 ```
-[XML Example](05-Use case\XML\DSJ.xml)
+[XML Example](\05-Use case\XML\DSJ.xml)

@@ -49,7 +49,7 @@ There can be 1:* DatedServiceJourney to describe the calendar for a peraticular 
                 </DatedServiceJourney>
                 <ServiceJourney version="1" id="ENT:ServiceJourney:Example_1" nameOfClass="guide">
                     <Description>
-### ServiceJourney
+### [ServiceJourney](/10-Objects/ServiceJourney.md)
 A ServiceJourney reference a [JourneyPattern](/10-Objects/JourneyPattern.md) describing the stopPattern through a network, and describing the passingtimes for each StopPoint in the JourneyPattern.
 This ensures that JourneyPatterns can be reused by multiple Journeys
                     </Description>
@@ -139,7 +139,7 @@ Stating the Date connected to each OperatingDay object
                 </ServiceCalendarFrame>
                 <ServiceFrame version="1" id="ENT:ServiceFrame:2" nameOfClass="guide">
                     <Description>
-### ScheduledStopPoints and StopAssignments
+### [ScheduledStopPoint](/10-Objects/ScheduledStopPoint.md) and [StopAssignments](/10-Objects/PassengerStopAssignment.md)
 
                     </Description>
                     <scheduledStopPoints>
@@ -170,7 +170,7 @@ Stating the Date connected to each OperatingDay object
                 </ServiceFrame>                
                 <SiteFrame version="1" id="ENT:SiteFrame:1" nameOfClass="guide">
                     <Description>
-### Site (StopPlace and quay)
+### Site ([StopPlace](/10-Objects/StopPlace.md) and [Quay](/10-Objects/Quay.md))
                     </Description>
                     <stopPlaces>
                         <StopPlace version="1" id="ENT:StopPlace:A">
@@ -193,7 +193,7 @@ Stating the Date connected to each OperatingDay object
                 </SiteFrame>
                 <ResourceFrame version="1" id="ENT:ResourceFrame:1" nameOfClass="guide">
                     <Description>
-### Operator
+### [Operator](/10-Objects/Operator.md)
                     </Description>
                     <organisations>
                         <Operator version="1" id="ENT:Operator:X">
