@@ -3,6 +3,11 @@
 A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
 
 ### PublicationDelivery:
+<details open>
+<summary>
+  <b>EPIP</b>
+</summary>
+
 - [dataObjects]
     - [CompositeFrame](/01-Frames/CompositeFrame.md)
         - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
@@ -28,8 +33,45 @@ A description of the minimum information needed for a timtable using DatedServic
                 - [vehicleJourneys]
                     - [ServiceJourney](/10-Objects/ServiceJourney.md)
                     - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
+</details>
+<details>
+<summary>
+  <b>Nordic Profile</b>
+</summary>
 
-    
+### Shared file:
+- [dataObjects]
+    - [CompositeFrame](/01-Frames/CompositeFrame.md)
+        - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
+        - [codespace] [Codespace](/10-Objects/Codespace.md)
+        - FrameDefaults
+            - DefaultLocale
+        - [frames]
+            - [ResourceFrame](/01-Frames/ResourceFrame.md)
+                - [organisations] [Operator](/10-Objects/Operator.md)
+            - [ServiceFrame](/01-Frames/ServiceFrame.md)
+                - [journeyPatterns] [JourneyPattern](/10-Objects/JourneyPattern.md)
+                    - [pointsInSequence] [StopPointInJourneyPattern](/10-Objects/StopPointInJourneyPattern.md)
+                - [scheduledStopPoints] [ScheduledStopPoint](/10-Objects/ScheduledStopPoint.md)
+                - [stopAssignments] [PassengerStopAssignment](/10-Objects/PassengerStopAssignment.md)
+            - [ServiceCalendarFrame](/01-Frames/ServiceCalendarFrame.md)
+                - [operatingDays] [OperatingDay](/10-Objects/OperatingDay.md)
+            
+### Line file:
+- [dataObjects]
+    - [CompositeFrame](/01-Frames/CompositeFrame.md)
+        - [ServiceFrame](/01-Frames/ServiceFrame.md)
+            - [lines] [Line](/10-Objects/Line.md)
+            - [routes] [Route](/10-Objects/Route.md)
+            - [journeyPatterns] [JourneyPattern](/10-Objects/JourneyPattern.md)
+                - [pointsInSequence] [StopPointInJourneyPattern](/10-Objects/StopPointInJourneyPattern.md)
+        - [TimetableFrame](/01-Frames/TimetableFrame.md)
+            - [vehicleJourneys]
+                - [ServiceJourney](/10-Objects/ServiceJourney.md)
+                - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
+
+</details>
+
 ### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
