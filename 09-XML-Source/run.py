@@ -14,4 +14,4 @@ for example in os.listdir(xmlPath):
     elif example == 'usecases':
         for y in os.listdir(xmlPath + example):
             print(y)
-            XtM(xmlPath + example + '\\' + y, '05-Use case\\', xmlPath + example + '\\')
+            XtM(xmlPath + example + '\\' + y, '05-Use-case\\', xmlPath + example + '\\')
