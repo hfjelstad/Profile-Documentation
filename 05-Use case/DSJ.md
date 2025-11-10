@@ -46,4 +46,4 @@ The replacement service uses DatedServiceJourneyRef to tie together with the ori
     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
 </DatedServiceJourney>
 ```
-[XML Example](/05-Use case\XML/DSJ.xml)
+[XML Example](/05-Use cas/XML/DSJ.xml)
