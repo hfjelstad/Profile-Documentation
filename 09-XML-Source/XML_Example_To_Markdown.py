@@ -65,7 +65,7 @@ def xmlToMarkdown(File, OutputPath, RemovePath):
         cleaned_xml = '\n'.join(filtered_lines)
 
         markdown_lines.append('```xml\n' + cleaned_xml + "\n```\n") 
-    markdown_lines.append('[XML Example](' + '/' + OutputPath[:-2] + "/XML/" + str(File).replace(RemovePath,'') + ')')
+    markdown_lines.append('[XML Example](' + '/' + OutputPath[:-1] + "/XML/" + str(File).replace(RemovePath,'') + ')')
 
     for x in markdown_lines:
         markdownFile.write(x)
