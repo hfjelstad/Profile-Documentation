@@ -1,26 +1,40 @@
 
 ### Timetable using DatedServiceJourney
-A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
-
-### PublicationDelivery
-The delvivery is packed in one zip file with a shared file and one file per line. The picture shows which frames and objects inside that should be pressent in each file, the shared one and file per line.
-
-![PublicationDelivery](/04-Guides/images/PublicationDeliveryDatedServiceJourey.png)
-#### Description
-When exhange data, this is done inside frames, and always inside PublicationDelivery.
+A description of the minimum information needed for a timtable using DatedServiceJourney as a calendar
 
 
-# TODO: Move to above or??
+
+### PublicationDelivery:
+- [dataObjects]
+    - [CompositeFrame](/01-Frames/CompositeFrame.md)
+        - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
+        - [codespace] [Codespace](/10-Objects/Codespace.md)
+        - FrameDefaults
+            - DefaultLocale
+        - [frames]
+            - [SiteFrame](/01-Frames/SiteFrame.md)
+                - [stopPlaces] [StopPlace](/10-Objects/StopPlace.md)
+                    - [quays] [Quay](/10-Objects/Quay.md)
+            - [ServiceFrame](/01-Frames/ServiceFrame.md)
+                - [lines] [Line](/10-Objects/Line.md)
+                - [routes] [Route](/10-Objects/Route.md)
+                - [journeyPatterns] [JourneyPattern](/10-Objects/JourneyPattern.md)
+                    - [pointsInSequence] [StopPointInJourneyPattern](/10-Objects/StopPointInJourneyPattern.md)
+                - [scheduledStopPoints] [ScheduledStopPoint](/10-Objects/ScheduledStopPoint.md)
+                - [stopAssignments] [PassengerStopAssignment](/10-Objects/PassengerStopAssignment.md)
+            - [ServiceCalendarFrame](/01-Frames/ServiceCalendarFrame.md)
+                - [operatingDays] [OperatingDay](/10-Objects/OperatingDay.md)
+            - [ResourceFrame](/01-Frames/ResourceFrame.md)
+                - [organisations] [Operator](/10-Objects/Operator.md)
+            - [TimetableFrame](/01-Frames/TimetableFrame.md)
+                - [vehicleJourneys]
+                    - [ServiceJourney](/10-Objects/ServiceJourney.md)
+                    - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 
     
 ### DatedServiceJourney
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
-| XML-type | Name | Type | Cardinality | Description
-|-|-|-|:-:|-|
-| Attribute | Id | ObjectIdType | 1:1 | Identifier
-| Element |ServiceJourneyRef | ServiceJourneyRef | 1:1 | Reference to the ServiceJourney
-| List | OperatingDayRef | OperatingDayRef| 1:1 |Refernce to an operating day
 
 ```xml
 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example">
@@ -28,7 +42,7 @@ There can be 1:* DatedServiceJourney to describe the calendar for a peraticular 
     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
 </DatedServiceJourney>
 ```
-### ServiceJourney
+### [ServiceJourney](/10-Objects/ServiceJourney.md)
 A ServiceJourney reference a [JourneyPattern](#JourneyPattern) describing the stopPattern through a network, and describing the passingtimes for each StopPoint in the JourneyPattern.
 This ensures that JourneyPatterns can be reused by multiple Journeys
 
@@ -87,7 +101,7 @@ Having a connection to the [Line](#Line)
     <LineRef ref="ENT:Line:X"/>
 </Route>
 ```
-### Line
+### [Line](/10-Objects/Line.md)
 Multiple journeys with similar journeypatterns form a Line, this line can have a specific [Operator](#Operator) responsible for the service provided
 
 ```xml
@@ -182,4 +196,4 @@ Stating the Date connected to each OperatingDay object
     </organisations>
 </ResourceFrame>
 ```
-[XML Example](XML/Timetable_DatedServiceJourney.xml)
+[XML Example](/04-Guides/XML/Timetable_DatedServiceJourney.xml)

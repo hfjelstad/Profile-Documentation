@@ -10,13 +10,30 @@
 >
 >Operational details of the DatedServiceJourney is derived from a referenced generic ServiceJourney. The generic Journey cannot specify dayTypes when this is defined by the OperatingDay of the DatedServiceJourney.
 
+- PublicationDelivery
+    - [CompositeFrame](/01-Frames/CompositeFrame.md)
+        - validityConditions
+            - [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
+        - codespaces
+            - [Codespace](/10-Objects/Codespace.md)
+        - FrameDefaults
+            - DefaultLocale
+        - frames
+            - [ServiceFrame](/01-Frames/ServiceFrame.md)
+                - [Line](/10-Objects/Line.md)
+                - [Route](/10-Objects/Route.md)
+            - [TimetableFrame](/01-Frames/TimetableFrame.md)
+                - vehicleJourneys
+                    - [ServiceJourney](/10-Objects/ServiceJourney.md)
+                    - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
+
+
         
     </Description>
     <dataObjects>
         <TimetableFrame version="1" id="ENT:TimeTableFrame:1">
             <vehicleJourneys>
-                <!-- Planned -->
-                <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example" nameOfClass="example" derivedFromObjectRef="">
+                <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Planned_example" nameOfClass="example">
                     <Description>
 ### Normal planned journey 
 Referencing a [ServiceJourney](ServiceJourney.md) adding a OperatingDay to the Journey's calender and a unique identifier for this connection 
@@ -24,7 +41,6 @@ Referencing a [ServiceJourney](ServiceJourney.md) adding a OperatingDay to the J
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1"/>
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
                 </DatedServiceJourney>
-                <!-- Cancelled -->
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Cancelled_example" nameOfClass="example">
                     <Description>
 ### A cancellation of a journey
@@ -33,7 +49,6 @@ Referencing a [ServiceJourney](ServiceJourney.md) adding a OperatingDay to the J
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1"/>
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
                 </DatedServiceJourney>
-                <!-- Replaced -->
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Replaced" nameOfClass="example">
 					<Description>
 ### Journey beeing replaced
@@ -42,7 +57,6 @@ Referencing a [ServiceJourney](ServiceJourney.md) adding a OperatingDay to the J
                     <ServiceJourneyRef ref="ENT:ServiceJourney:Example_1"/>
                     <OperatingDayRef ref="ENT:OperatingDay:2025-03-06"/>
                 </DatedServiceJourney>
-                <!-- Replacing --> 
                 <DatedServiceJourney version="1" id="ENT:DatedServiceJourney:Replacement_Bus_1" nameOfClass="example">
 					<Description>
 ### Replacement journey

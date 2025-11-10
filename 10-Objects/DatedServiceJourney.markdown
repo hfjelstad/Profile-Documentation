@@ -1,18 +1,13 @@
 # DatedServiceJourney
   
 >[!NOTE]
->A particular ServiceJourney of a vehicle on a particular OperatingDay.
+>A particular [ServiceJourney](/10-Objects/ServiceJourney.md) of a vehicle on a particular [OperatingDay](/10-Objects/OperatingDay.md).
 >
->Operational details of the DatedServiceJourney is derived from a referenced generic ServiceJourney. The generic Journey cannot specify dayTypes when this is defined by the OperatingDay of the DatedServiceJourney.
+>Operational details of the DatedServiceJourney is derived from a referenced generic [ServiceJourney](/10-Objects/ServiceJourney.md). The generic Journey cannot specify [dayTypes](/10-Objects/DayType.md) when this is defined by the [OperatingDay](/10-Objects/OperatingDay.md) of the DatedServiceJourney.
 >
->See definition under General information
 >
->Defined in TimetableFrame
->
->Examples in the GitHub-repository
->
->NB:
->This data type is under Nordic revision, where its core structure is currently operational but supplementary data / improvements may be introduced in the NeTEx profile at a later stage.
+>Defined in PublicationDelivery/dataObjects/[TimetableFrame](/01-Frames/TimetableFrame.md)/vehicleJourneys 
+
 
 <br>
 
@@ -21,56 +16,19 @@
   <b>Full overview</b>
 </summary>
 
-| XML-type | Name | Type | Cardinality 
+| Type | Name | Description | Cardinality 
 |-|-|-|:-:|
-| Attribute |<b><a name="dated-service-journey-id"></a>Id | ObjectIdType |<font color="red"> 1:1|
-| Element |<b>BlockRef | Reference |<font color="red"> 0:1| 
-| Element |<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1|
-| Element |<b>DatedServiceJourneyRef|DatedServiceJourneyRef|<font color="red">0:*|
-| List |<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1|
+| Attribute | <b>version | Object version numbering |<font color="green"> <b>1:1|
+| Attribute | <b>id | Identifier |<font color="green"> <b>1:1|
+| Attribute | <b>created | DateTime describing when the object was created |<font color="yellow"> <b>0:1|
+| Element   | <b>ServiceAlteration | Enumeration: [planned, replaced, extraJourney], "planned" is default if no data provided | <font color="yellow"> <b>0:1 |
+| Reference | <b>BlockRef | Reference to Block or TrainBlock |<font color="yellow"> <b>0:1| 
+| Reference | <b>ServiceJourneyRef | Reference to the [ServiceJourney](/10-Objects/ServiceJourney.md) template |<font color="green"> <b>1:1|
+| Reference | <b>DatedServiceJourneyRef| Referencing a Service the current objekt is reinforcing or replacing |<font color="yellow"> <b>0:*|
+| Reference | <b>OperatingDayRef| Reference to the [OperatingDay](/10-Objects/OperatingDay.md) dating  the object |<font color="green"><b>1:1|
 
 </details>
-<details>
-<summary>
-  <b>Minimum overview</b>
-</summary>
-
-| Name | Type | Cardinality | Description |
-|-|-|:-:|-|
-|<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1| Reference to the generic ServiceJourney from which journey details e.g. JourneyPatternRef and passingTimes is derived |
-|<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1||
-
-</details>
-<details>
-<summary>
-  <b>Reservation overview</b>
-</summary>
-<h1>Test Header</h1>
-
-| Name | Type | Cardinality | Description |
-|-|-|:-:|-|
-|<b>BlockRef | Reference |<font color="red"> 0:1| |
-|<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1| Reference to the generic ServiceJourney from which journey details e.g. JourneyPatternRef and passingTimes is derived |
-|<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1||
-
-</details>
-<details>
-<summary>
-  <b>Sales overview</b>
-</summary>
-<br>
-  
-| Name | Type | Cardinality | Description |
-|-|-|:-:|-|
-|<b>ServiceJourneyRef | ServiceJourneyRef |<font color="red"> 1:1| Reference to the generic ServiceJourney from which journey details e.g. JourneyPatternRef and passingTimes is derived |
-|<b>OperatingDayRef|OperatingDayRef|<font color="red">1:1||
-|<b>replacedJourneys|DatedVehicleJourneyRef|<font color="red">0:*|List of DatedServiceJourneys replaced|
-
-<br>
-  Something something sales related
-</details>
-
 <br>
 
 >[!TIP]
->[DatedServiceJourney](#dated-service-journey-id)
+>Have a look at the guide describing the simple usage of [DatedServiceJourney](/04-Guides/Timetable_DatedServiceJourney.md), or the [deviation handling](/05-Use%20case/DSJ.md)
