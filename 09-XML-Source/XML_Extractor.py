@@ -139,7 +139,7 @@ if __name__ == "__main__":
                 pass
             markdownFile.write(('\n\n'))
             markdownFile.write('### ' + x + '\n\n')
-            markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
+            markdownFile.write('```\n' + '# NeTEx annotation: \n' +  '***' + XA(x) + '***' + '\n```' + '\n\n')
             markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
             markdownFile.write('| --- | --- | --- | --- |' + ' \n')
             for y in profileDict[x]:
@@ -154,10 +154,10 @@ if __name__ == "__main__":
                                     pass
                                 if 'Frame' in last:
                                     link = '[' + last + '](' + last + '.md' + ')'
-                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + '***' + definition + '***' + ' |' + ' \n')
                                 else:
                                     link = '[' + last + '](' + '/10-Objects/' + last + '.md' + ')'
-                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + '***' + definition + '***' + ' |' + ' \n')
                         except:
                             pass
                 else:
@@ -167,7 +167,7 @@ if __name__ == "__main__":
                             definition = XA(z)
                         except:
                             pass
-                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + definition + ' |' + ' \n')
+                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + '***' + definition + '***' + ' |' + ' \n')
         else:           
             markdownFile = open('10-Objects\\' + fileName, 'w')
             try:
@@ -182,7 +182,7 @@ if __name__ == "__main__":
                 pass
             markdownFile.write(('\n\n'))
             markdownFile.write('### ' + x + '\n\n')
-            markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
+            markdownFile.write('```\n' + '# NeTEx annotation: \n' + '***' + XA(x) + '***' + '\n```' + '\n\n')
             markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
             markdownFile.write('| --- | --- | --- | --- |' + ' \n')
             for y in profileDict[x]:
@@ -197,9 +197,9 @@ if __name__ == "__main__":
                                     pass
                                 if 'Ref' in last:
                                     link = '[' + last + '](' + last[:-3] + '.md' + ')'
-                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + definition + ' |' + ' \n')
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + link + ' | ' + '***' + definition + '***' + ' |' + ' \n')
                                 else:
-                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + definition + ' |' + ' \n')
+                                    markdownFile.write('| ' + y + ' | ' + z + ' | ' + last + ' | ' + '***' + definition + '***' + ' |' + ' \n')
                         except:
                             pass
                 elif y == 'Reference':
@@ -210,7 +210,7 @@ if __name__ == "__main__":
                             referenceDefinition = XA(z)
                         except:
                             pass
-                        markdownFile.write('| ' + y + ' | ' + link + ' | ' + ' | ' + referenceDefinition + ' |' + ' \n')
+                        markdownFile.write('| ' + y + ' | ' + link + ' | ' + ' | ' + '***' + referenceDefinition + '***' + ' |' + ' \n')
                 else:
                     for z in profileDict[x][y]:
                         definition = ''
@@ -218,4 +218,4 @@ if __name__ == "__main__":
                             definition = XA(z)
                         except:
                             pass
-                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' + definition + ' |' + ' \n')
+                        markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | '  + '***' + definition + '***' + ' |' + ' \n')

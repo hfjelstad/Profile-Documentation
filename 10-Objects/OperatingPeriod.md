@@ -4,14 +4,14 @@
 
 ```
 # NeTEx annotation: 
-A continuous interval of time between two OPERATING DAYs which will be used to define validities.
+***A continuous interval of time between two OPERATING DAYs which will be used to define validities.***
 ```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
-| Attribute | version |  |  | 
-| Attribute | id |  |  | 
-| Element | FromDate |  |  | 
-| Element | ToDate |  |  | 
-| Reference | [FromOperatingDayRef](FromOperatingDay.md) |  |  | 
-| Reference | [ToOperatingDayRef](ToOperatingDay.md) |  |  | 
+| Attribute | version |  | ****** | 
+| Attribute | id |  | ****** | 
+| Element | FromDate |  | ****** | 
+| Element | ToDate |  | ****** | 
+| Reference | [FromOperatingDayRef](FromOperatingDay.md) |  | ****** | 
+| Reference | [ToOperatingDayRef](ToOperatingDay.md) |  | ****** | 

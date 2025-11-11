@@ -22,6 +22,7 @@ def XSD_annotation(Element):
                 XSD_annotation = y.text
             #print(strip_namespace(x.tag))
         #print(x.annotation.documentation.text)
-    return(XSD_annotation)
+    Clean_annotation = ' '.join(XSD_annotation.split())
+    return(Clean_annotation)
 if __name__ == "__main__":
     print(XSD_annotation('DatedServiceJourney'))

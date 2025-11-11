@@ -4,12 +4,12 @@
 
 ```
 # NeTEx annotation: 
-Alternative Name.
+***Alternative Name.***
 ```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
-| Attribute | modification |  |  | 
-| Attribute | version |  |  | 
-| Attribute | id |  |  | 
-| Element | NameType |  |  | 
+| Attribute | modification |  | ****** | 
+| Attribute | version |  | ****** | 
+| Attribute | id |  | ****** | 
+| Element | NameType |  | ****** | 

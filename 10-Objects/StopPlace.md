@@ -41,22 +41,22 @@ This content is added from a manually generated file:
 
 ```
 # NeTEx annotation: 
-Version of a named place where public transport may be accessed. May be a building complex (e.g. a station) or an on-street location.
+***Version of a named place where public transport may be accessed. May be a building complex (e.g. a station) or an on-street location.***
 ```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
-| Attribute | created |  |  | 
-| Attribute | changed |  |  | 
-| Attribute | modification |  |  | 
-| Attribute | version |  |  | 
-| Attribute | id |  |  | 
-| Reference | [TopographicPlaceRef](TopographicPlace.md) |  |  Reference to a TOPOGRAPHIC PLACE. | 
-| Reference | [ParentSiteRef](ParentSite.md) |  |  | 
-| List | keyList | KeyValue | A list of alternative Key values for an element. | 
-| List | Centroid | Location |  | 
-| List | tariffZones | [TariffZoneRef](TariffZone.md) |  | 
-| List | quays | Quay |  | 
-| List | ValidBetween | FromDate | OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. | 
-| List | alternativeNames | AlternativeName |  | 
-| List | adjacentSites | [SiteRef](Site.md) |  | 
+| Attribute | created |  | ****** | 
+| Attribute | changed |  | ****** | 
+| Attribute | modification |  | ****** | 
+| Attribute | version |  | ****** | 
+| Attribute | id |  | ****** | 
+| Reference | [TopographicPlaceRef](TopographicPlace.md) |  | ***Reference to a TOPOGRAPHIC PLACE.*** | 
+| Reference | [ParentSiteRef](ParentSite.md) |  | ****** | 
+| List | keyList | KeyValue | ***A list of alternative Key values for an element.*** | 
+| List | Centroid | Location | ****** | 
+| List | tariffZones | [TariffZoneRef](TariffZone.md) | ****** | 
+| List | quays | Quay | ****** | 
+| List | ValidBetween | FromDate | ***OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT.*** | 
+| List | alternativeNames | AlternativeName | ****** | 
+| List | adjacentSites | [SiteRef](Site.md) | ****** | 
