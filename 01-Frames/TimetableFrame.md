@@ -1,6 +1,7 @@
-[Home](/README.md) / [Frames](/01-Frames)
+[Home](/README.md) / [Frames](/01-Frames/)
 
 # TimetableFrame
+
 
 ### NeTEx annotation: 
 ***A coherent set of timetable data (VEHICLE JOURNEYs and BLOCKs) to which the same VALIDITY CONDITIONs have been assigned.***
