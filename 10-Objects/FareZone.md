@@ -135,21 +135,21 @@ It is possible to create overlapping or duplicated zones for different purposes.
 
 ```
 # NeTEx annotation: 
-*** A specialization of TARIFF ZONE to include FARE SECTIONs. ***
+***A specialization of TARIFF ZONE to include FARE SECTIONs.***
 ```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
-| Attribute | changed |  | ***  *** | 
-| Attribute | modification |  | ***  *** | 
-| Attribute | version |  | ***  *** | 
-| Attribute | id |  | ***  *** | 
-| Element | PrivateCode |  | *** A private code that uniquely identifies the element. May be used for inter-operating with other (legacy) systems. *** | 
+| Attribute | changed |  |  | 
+| Attribute | modification |  |  | 
+| Attribute | version |  |  | 
+| Attribute | id |  |  | 
+| Element | PrivateCode |  | ***A private code that uniquely identifies the element. May be used for inter-operating with other (legacy) systems.*** | 
 | Element | gis:Polygon |  |  | 
-| Element | ZoneTopology |  | ***  *** | 
-| Element | ScopingMethod |  | ***  *** | 
-| Reference | [AuthorityRef](Authority.md) |  | *** Reference to an AUTHORITY. *** | 
-| List | ValidBetween | FromDate | *** OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT. *** | 
-| List | keyList | KeyValue | *** A list of alternative Key values for an element. *** | 
-| List | neighbours | [FareZoneRef](FareZone.md) | ***  *** | 
-| List | members | [ScheduledStopPointRef](ScheduledStopPoint.md) | ***  *** | 
+| Element | ZoneTopology |  |  | 
+| Element | ScopingMethod |  |  | 
+| Reference | [AuthorityRef](Authority.md) |  | ***Reference to an AUTHORITY.*** | 
+| List | ValidBetween | FromDate | ***OPTIMISATION. Simple version of a VALIDITY CONDITION. Comprises a simple period. NO UNIQUENESS CONSTRAINT.*** | 
+| List | keyList | KeyValue | ***A list of alternative Key values for an element.*** | 
+| List | neighbours | [FareZoneRef](FareZone.md) |  | 
+| List | members | [ScheduledStopPointRef](ScheduledStopPoint.md) |  | 

@@ -30,19 +30,19 @@ This content is added from a manually generated file:
 
 ```
 # NeTEx annotation: 
-*** A place such as platform, stance, or quayside where passengers have access to PT vehicles, Taxi cars or other means of transportation. A QUAY may contain other sub QUAYs. A child QUAY must be physically contained within its parent QUAY. ***
+***A place such as platform, stance, or quayside where passengers have access to PT vehicles, Taxi cars or other means of transportation. A QUAY may contain other sub QUAYs. A child QUAY must be physically contained within its parent QUAY.***
 ```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
-| Attribute | changed |  | ***  *** | 
-| Attribute | modification |  | ***  *** | 
-| Attribute | version |  | ***  *** | 
-| Attribute | id |  | ***  *** | 
-| Attribute | created |  | ***  *** | 
-| Element | PrivateCode |  | *** A private code that uniquely identifies the element. May be used for inter-operating with other (legacy) systems. *** | 
-| Element | PublicCode |  | ***  *** | 
-| Element | CompassBearing |  | ***  *** | 
-| List | keyList | KeyValue | *** A list of alternative Key values for an element. *** | 
-| List | Centroid | Location | ***  *** | 
-| List | boardingPositions | BoardingPosition | ***  *** | 
+| Attribute | changed |  |  | 
+| Attribute | modification |  |  | 
+| Attribute | version |  |  | 
+| Attribute | id |  |  | 
+| Attribute | created |  |  | 
+| Element | PrivateCode |  | ***A private code that uniquely identifies the element. May be used for inter-operating with other (legacy) systems.*** | 
+| Element | PublicCode |  |  | 
+| Element | CompassBearing |  |  | 
+| List | keyList | KeyValue | ***A list of alternative Key values for an element.*** | 
+| List | Centroid | Location |  | 
+| List | boardingPositions | BoardingPosition |  | 
