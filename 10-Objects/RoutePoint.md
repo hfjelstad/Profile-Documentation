@@ -1,11 +1,9 @@
 
 
-### RoutePoint
+# RoutePoint
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A POINT used to define the shape of a ROUTE through the network.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

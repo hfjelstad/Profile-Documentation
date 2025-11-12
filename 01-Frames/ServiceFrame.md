@@ -1,11 +1,9 @@
 
 
-### ServiceFrame
+# ServiceFrame
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A coherent set of Service data to which the same frame VALIDITY CONDITIONs have been assigned.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

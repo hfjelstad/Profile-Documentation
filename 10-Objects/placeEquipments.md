@@ -1,11 +1,9 @@
 
 
-### placeEquipments
+# placeEquipments
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

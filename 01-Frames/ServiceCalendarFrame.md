@@ -1,11 +1,9 @@
 
 
-### ServiceCalendarFrame
+# ServiceCalendarFrame
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A SERVICE CALENDAR. A coherent set of OPERATING DAYS and DAY TYPES comprising a Calendar. that may be used to state the temporal VALIDITY of other NeTEx entities such as Timetables, STOP PLACEs, etc. Covers a PERIOD with a collection of assignments of OPERATING DAYS to DAY TYPES.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### FlexibleServiceProperties
+# FlexibleServiceProperties
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Additional characteristics of a FLEXIBLE SERVICE. A service may be partly fixed, partly flexible.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

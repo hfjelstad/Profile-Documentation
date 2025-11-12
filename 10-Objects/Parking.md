@@ -1,11 +1,9 @@
 
 
-### Parking
+# Parking
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A named place where Parking may be accessed. May be a building complex (e.g. a station) or an on-street location.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

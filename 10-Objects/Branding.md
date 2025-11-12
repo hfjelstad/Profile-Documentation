@@ -1,11 +1,9 @@
 
 
-### Branding
+# Branding
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***An arbitrary marketing classification.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

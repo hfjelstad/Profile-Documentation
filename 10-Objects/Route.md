@@ -1,11 +1,9 @@
 
 
-### Route
+# Route
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***An ordered list of located POINTs defining one single path through the Road (or rail) network. A ROUTE may pass through the same POINT more than once.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

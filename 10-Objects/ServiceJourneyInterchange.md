@@ -1,11 +1,9 @@
 
 
-### ServiceJourneyInterchange
+# ServiceJourneyInterchange
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***The scheduled possibility for transfer of passengers between two SERVICE JOURNEYs at the same or different STOP POINTs.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### TimetableFrame
+# TimetableFrame
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A coherent set of timetable data (VEHICLE JOURNEYs and BLOCKs) to which the same VALIDITY CONDITIONs have been assigned.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

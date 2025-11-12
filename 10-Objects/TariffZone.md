@@ -1,11 +1,9 @@
 
 
-### TariffZone
+# TariffZone
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A ZONE used to define a zonal fare structure in a zone-counting or zone-matrix system.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

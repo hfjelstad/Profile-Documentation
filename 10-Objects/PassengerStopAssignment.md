@@ -1,11 +1,9 @@
 
 
-### PassengerStopAssignment
+# PassengerStopAssignment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Assignment of a SCHEDULED STOP POINT to a STOP PLACE and QUAY, etc.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### ServiceLinkInJourneyPattern
+# ServiceLinkInJourneyPattern
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***The use of a SERVICE LINK in a specified order. within a JOURNEY PATTERN or SERVICE PATTERN.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

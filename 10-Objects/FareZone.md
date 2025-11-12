@@ -131,12 +131,10 @@ It is possible to create overlapping or duplicated zones for different purposes.
 
 
 
-### FareZone
+# FareZone
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A specialization of TARIFF ZONE to include FARE SECTIONs.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

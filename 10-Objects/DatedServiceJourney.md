@@ -44,12 +44,10 @@ This content is added from a manually generated file:
 
 
 
-### DatedServiceJourney
+# DatedServiceJourney
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A particular journey of a vehicle on a particular OPERATING DAY including all modifications possibly decided by the control staff. The VIEW includes derived ancillary data from referenced entities.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

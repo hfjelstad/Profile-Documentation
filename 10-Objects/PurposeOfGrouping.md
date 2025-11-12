@@ -1,11 +1,9 @@
 
 
-### PurposeOfGrouping
+# PurposeOfGrouping
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Functional purpose for which GROUPs of elements are defined. The PURPOSE OF GROUPING may be restricted to one or more types of the given object.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

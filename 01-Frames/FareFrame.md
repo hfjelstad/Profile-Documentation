@@ -1,11 +1,19 @@
+This content is added from a manually generated file: 
 
 
-### FareFrame
 
-```
-# NeTEx annotation: 
+ --------------------------- 
+
+
+
+ This content is automaticly generated using NAP as source: 
+
+
+
+# FareFrame
+
+### NeTEx annotation: 
 ***A coherent set of Vehicle Scheduling data to which the same VALIDITY CONDITIONs have been assigned.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

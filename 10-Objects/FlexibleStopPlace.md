@@ -1,11 +1,9 @@
 
 
-### FlexibleStopPlace
+# FlexibleStopPlace
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A named type of STOP PLACE for DRT comprising one or more flexible zones where vehicles may stop and where passengers may board or leave vehicles.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

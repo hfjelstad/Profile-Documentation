@@ -37,12 +37,10 @@ This content is added from a manually generated file:
 
 
 
-### StopPlace
+# StopPlace
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Version of a named place where public transport may be accessed. May be a building complex (e.g. a station) or an on-street location.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

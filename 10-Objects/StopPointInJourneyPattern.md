@@ -1,11 +1,9 @@
 
 
-### StopPointInJourneyPattern
+# StopPointInJourneyPattern
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***The use of a SCHEDULED STOP POINT in a specified order. within a JOURNEY PATTERN or SERVICE PATTERN.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

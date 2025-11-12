@@ -1,11 +1,9 @@
 
 
-### Line
+# Line
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A group of ROUTEs which is generally known to the public by a similar name or number.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

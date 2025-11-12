@@ -1,11 +1,9 @@
 
 
-### TopographicPlace
+# TopographicPlace
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A town, city, village, suburb, quarter or other name settlement within a country. Provides a Gazetteer of Transport related place names.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

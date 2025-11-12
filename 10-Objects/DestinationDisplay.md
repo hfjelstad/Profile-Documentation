@@ -1,11 +1,9 @@
 
 
-### DestinationDisplay
+# DestinationDisplay
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***An advertised destination of a specific JOURNEY PATTERN, usually displayed on a head sign or at other on-board locations.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

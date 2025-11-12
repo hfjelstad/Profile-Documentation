@@ -1,11 +1,9 @@
 
 
-### WaitingRoomEquipment
+# WaitingRoomEquipment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Specialisation of WAITING EQUIPMENT for WAITING ROOMs, classified by TYPE OF WAITING ROOM.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

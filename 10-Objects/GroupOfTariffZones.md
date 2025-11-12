@@ -67,12 +67,10 @@ Example of a zone group with purposeOfGrouping (not all zones are included and s
 
 
 
-### GroupOfTariffZones
+# GroupOfTariffZones
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

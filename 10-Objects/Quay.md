@@ -26,12 +26,10 @@ This content is added from a manually generated file:
 
 
 
-### Quay
+# Quay
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A place such as platform, stance, or quayside where passengers have access to PT vehicles, Taxi cars or other means of transportation. A QUAY may contain other sub QUAYs. A child QUAY must be physically contained within its parent QUAY.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

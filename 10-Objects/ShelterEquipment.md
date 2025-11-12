@@ -1,11 +1,9 @@
 
 
-### ShelterEquipment
+# ShelterEquipment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Specialisation of WAITING EQUIPMENT for a SHELTER.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

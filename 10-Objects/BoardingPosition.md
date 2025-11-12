@@ -1,11 +1,9 @@
 
 
-### BoardingPosition
+# BoardingPosition
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A location within a QUAY from which passengers may directly board, or onto which passengers may directly alight from, a VEHICLE.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

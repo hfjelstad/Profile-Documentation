@@ -1,11 +1,9 @@
 
 
-### AvailabilityCondition
+# AvailabilityCondition
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***VALIDITY CONDITION stated in terms of DAY TYPES and PROPERTIES OF DAYs.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

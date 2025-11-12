@@ -1,11 +1,9 @@
 
 
-### JourneyPattern
+# JourneyPattern
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***An ordered list of SCHEDULED STOP POINTs and TIMING POINTs on a single ROUTE, describing the pattern of working for public transport vehicles. A JOURNEY PATTERN may pass through the same POINT more than once. The first point of a JOURNEY PATTERN is the origin. The last point is the destination.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### Operator
+# Operator
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A company providing public transport services.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### FlexibleStopAssignment
+# FlexibleStopAssignment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Assignment of a SCHEDULED STOP POINT to a FLEXIBLE STOP PLACE and quay. etc.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

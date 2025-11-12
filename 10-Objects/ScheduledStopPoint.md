@@ -1,11 +1,9 @@
 
 
-### ScheduledStopPoint
+# ScheduledStopPoint
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 *** A POINT where passengers can board or alight from vehicles.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

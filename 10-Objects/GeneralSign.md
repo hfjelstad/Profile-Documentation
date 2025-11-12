@@ -1,11 +1,9 @@
 
 
-### GeneralSign
+# GeneralSign
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Specialisation of SIGN EQUIPMENT sor signs which are not HEADING SIGNs nor PLACE SIGNs.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### NoticeAssignment
+# NoticeAssignment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***The assignment of a NOTICE showing an exception in a JOURNEY PATTERN, a COMMON SECTION, or a VEHICLE JOURNEY, possibly specifying at which POINT IN JOURNEY PATTERN the validity of the NOTICE starts and ends respectively.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### SiteFrame
+# SiteFrame
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A coherent set of SITE data to which the same frame VALIDITY CONDITIONs have been assigned.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

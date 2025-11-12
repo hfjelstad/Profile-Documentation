@@ -1,11 +1,9 @@
 
 
-### GroupOfStopPlaces
+# GroupOfStopPlaces
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Group of STOP PLACEs.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

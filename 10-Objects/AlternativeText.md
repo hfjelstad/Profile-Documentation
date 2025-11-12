@@ -1,11 +1,9 @@
 
 
-### AlternativeText
+# AlternativeText
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Alternative Text. +v1.1***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

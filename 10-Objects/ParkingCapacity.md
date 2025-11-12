@@ -1,11 +1,9 @@
 
 
-### ParkingCapacity
+# ParkingCapacity
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Capacity of a PARKING.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

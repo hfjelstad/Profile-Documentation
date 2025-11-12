@@ -1,11 +1,9 @@
 
 
-### Network
+# Network
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A named grouping of LINEs under which a Transport network is known.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

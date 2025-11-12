@@ -138,8 +138,8 @@ if __name__ == "__main__":
             except:
                 pass
             markdownFile.write(('\n\n'))
-            markdownFile.write('### ' + x + '\n\n')
-            markdownFile.write('```\n' + '# NeTEx annotation: \n' +  XA(x) + '\n```' + '\n\n')
+            markdownFile.write('# ' + x + '\n\n')
+            markdownFile.write('### NeTEx annotation: \n' +  XA(x) + '\n\n')
             markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
             markdownFile.write('| --- | --- | --- | --- |' + ' \n')
             for y in profileDict[x]:
@@ -181,8 +181,8 @@ if __name__ == "__main__":
             except:
                 pass
             markdownFile.write(('\n\n'))
-            markdownFile.write('### ' + x + '\n\n')
-            markdownFile.write('```\n' + '# NeTEx annotation: \n' + XA(x) + '\n```' + '\n\n')
+            markdownFile.write('# ' + x + '\n\n')
+            markdownFile.write('### NeTEx annotation: \n' + XA(x) + '\n\n')
             markdownFile.write('| Type | Name | SubElement | NeTEx annotation |' + ' \n')
             markdownFile.write('| --- | --- | --- | --- |' + ' \n')
             for y in profileDict[x]:

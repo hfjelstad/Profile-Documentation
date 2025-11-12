@@ -15,12 +15,10 @@ CompositeFrame can be used to group frames that shares the same ValidityConditio
 
 
 
-### CompositeFrame
+# CompositeFrame
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A container VERSION FRAME that groups a set of content VERSION FRAMsE to which the same VALIDITY CONDITIONs have been assigned.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

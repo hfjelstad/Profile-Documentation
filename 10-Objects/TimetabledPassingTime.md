@@ -1,11 +1,9 @@
 
 
-### TimetabledPassingTime
+# TimetabledPassingTime
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***TIMETABLED PASSING TIME at TIMING POINT.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

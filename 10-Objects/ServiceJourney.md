@@ -1,11 +1,9 @@
 
 
-### ServiceJourney
+# ServiceJourney
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A passenger carrying VEHICLE JOURNEY for one specified DAY TYPE. The pattern of working is in principle defined by a SERVICE JOURNEY PATTERN. The VIEW includes derived ancillary data from referenced entities.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

@@ -1,11 +1,9 @@
 
 
-### OperatingPeriod
+# OperatingPeriod
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A continuous interval of time between two OPERATING DAYs which will be used to define validities.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

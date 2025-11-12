@@ -1,11 +1,9 @@
 
 
-### SanitaryEquipment
+# SanitaryEquipment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A SANITARY FACILITY , e.g. WC, Shower, baby change.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

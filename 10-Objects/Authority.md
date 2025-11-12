@@ -1,11 +1,9 @@
 
 
-### Authority
+# Authority
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***The ORGANISATION under which the responsibility of organising the transport service in a certain area is placed.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

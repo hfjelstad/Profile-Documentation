@@ -1,11 +1,9 @@
 
 
-### ParkingProperties
+# ParkingProperties
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Properties of a PARKING.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

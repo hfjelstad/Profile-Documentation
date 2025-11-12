@@ -1,11 +1,9 @@
 
 
-### TicketingEquipment
+# TicketingEquipment
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***Specialisation of PASSENGER EQUIPMENT for ticketing.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 

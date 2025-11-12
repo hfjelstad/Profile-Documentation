@@ -1,11 +1,9 @@
 
 
-### FlexibleLine
+# FlexibleLine
 
-```
-# NeTEx annotation: 
+### NeTEx annotation: 
 ***A group of FLEXIBLE ROUTEs of which is generally known to the public by a similar name or number and which have common booking arrangements.***
-```
 
 | Type | Name | SubElement | NeTEx annotation | 
 | --- | --- | --- | --- | 
