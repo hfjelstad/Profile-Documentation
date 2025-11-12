@@ -1,4 +1,4 @@
-This content is added from a manually generated file: 
+[Home](/README.md) / [Objects](/10-Objects)This content is added from a manually generated file: 
 
 # StopPlace
 >[!NOTE]

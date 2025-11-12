@@ -22,10 +22,11 @@ def xmlToMarkdown(File, OutputPath, RemovePath):
     markdownFileName = str(File).replace('.xml','.md').replace(RemovePath,'')
     print(markdownFileName)
     markdownFile = open(OutputPath + markdownFileName, "w")
-
+    markdownFile.write('[Home](/README.md) / ['+ markdownFileName[:-3] +'](/'+ OutputPath +') \n')
     try:
         x = root.findall("Description")
         for y in x:
+            
             markdownFile.write(y.text)
             markdownFile.write('\n')
             root.remove(y)    

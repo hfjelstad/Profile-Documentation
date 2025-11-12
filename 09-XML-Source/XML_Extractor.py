@@ -127,6 +127,7 @@ if __name__ == "__main__":
         fileName = x + '.md'
         if 'Frame' in x:
             markdownFile = open('01-Frames\\' + fileName, 'w')
+            markdownFile.write(('[Home](/README.md) / [Frames](/01-Frames)'))
             try:
                 for file in glob.glob("01-Frames/"+ x +".markdown"):
                     markdownFile.write('This content is added from a manually generated file: \n\n')
@@ -170,6 +171,7 @@ if __name__ == "__main__":
                         markdownFile.write('| ' + y + ' | ' + z + ' | ' + ' | ' +  definition + ' |' + ' \n')
         else:           
             markdownFile = open('10-Objects\\' + fileName, 'w')
+            markdownFile.write(('[Home](/README.md) / [Objects](/10-Objects)'))
             try:
                 for file in glob.glob("10-Objects/"+ x +".markdown"):
                     markdownFile.write('This content is added from a manually generated file: \n\n')
