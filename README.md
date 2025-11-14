@@ -63,6 +63,10 @@ Click [here](https://github.com/NeTEx-CEN/NeTEx/tree/master/xsd) for the offical
 </details>
 <br/>
 
+# Exhanging information
+Information on how to use different frames within a PublicationDelivery
+- [PublicationDelivery](/01-Frames/PublicationDelivery.md)
+
 # Frames
 Frames are used for logical grouping of different NeTEx concepts:
 - 🧩 [CompositFrame](/01-Frames/CompositFrame.md) - Grouping of multiple frames
@@ -76,7 +80,7 @@ Frames are used for logical grouping of different NeTEx concepts:
 - 🎟️ [FareFrame](/01-Frames/FareFrame.md) - frame for fare definitions and price information including products and sales offers.
 
 # Guides:
-- [Using DatedServiceJourney as a calendar](/04-Guides/Timetable_DatedServiceJourney.md) 📅
+- [Guides](/04-Guides/Guides.md)
 
 # Use Cases
 - [Handling deviations with DatedServiceJourneys](/05-Use-case/DSJ.md)
