@@ -10,7 +10,6 @@ Align structure with Transmodel and NeTEx <br>
 - [Introduction](#Introduction) - Get to know NeTEx, its Terms, common usage and tools (like XSD) provided
 - [Frames](#frames) - Deep dive into the NeTEx structure and the basic usage of frames 
 - [Guides](#guides) - Where can i start? How should i model my data? See no further, these guides will help you a long way
-- [Use Cases](#use-case) - If you have some very perticular needs, maybe they are showcased here?
 - [Reference Data examples](#reference-data-examples) - How have others solved the issue with external data sources?
 
 # Introduction
@@ -47,25 +46,9 @@ You can use XSD (XML Schema Definition) to validate XML files by linking the XML
 Click [here](https://github.com/NeTEx-CEN/NeTEx/tree/master/xsd) for the offical and current NeTEx XSD
 </details>
 <details>
-<summary>Terms</summary>
-</details>
-<details>
-<summary>Common</summary>
-<br>
-**TODO:** Short intro to Common
-
-- [DateFormats](/02-Common/01-DateFormats.markdown)
-- [Calendars](/02-Common/02-Calendars.markdown)
-
-</details>
-<details>
 <summary>Standard (NeTEx) vs Profile</summary>
 </details>
 <br/>
-
-# Exhanging information
-Information on how to use different frames within a PublicationDelivery
-- [PublicationDelivery](/01-Frames/PublicationDelivery.md)
 
 # Frames
 Frames are used for logical grouping of different NeTEx concepts:
@@ -76,32 +59,43 @@ Frames are used for logical grouping of different NeTEx concepts:
 - 📅 [ServiceCalendarFrame](/01-Frames/ServiceCalendarFrame.md) - frame for defining calendar-information - types of days, operating days, and their relations etc.
 - 🕒 [TimetableFrame](/01-Frames/TimetableFrame.md) - frame for describing the actual journeys, such as calendar references, departure times, and waiting times etc.prop
 - 🚍 [VehicleScheduleFrame](/01-Frames/07-VehicleScheduleFrame.markdown) - frame for vehicle usage planning with vehicle information, equipment and blocks.
-- 👨‍✈️ [DriverScheduleFrame](/01-Frames/08-DriverScheduleFrame.markdown) - frame for planning of personnel scheduling 
+- 🛞 [DriverScheduleFrame](/01-Frames/08-DriverScheduleFrame.markdown) - frame for planning of personnel scheduling 
 - 🎟️ [FareFrame](/01-Frames/FareFrame.md) - frame for fare definitions and price information including products and sales offers.
 
 # Guides:
-- [Guides](/04-Guides/Guides.md)
+Some useful guides 
 
-# Use Cases
-- [Handling deviations with DatedServiceJourneys](/05-Use-case/DSJ.md)
+<details>
+<summary>
+Guides
+</summary>
 
-Use Cases and descriptions
+- [StopPlaces - Describing the infrastructure]() 
+- [Introduction on how to exchange timetable data](/04-Guides/IntroductionTimetableData.md)
+- [Setting up your first ServiceJourney]()
+- [Using DatedServiceJourney as a calendar](/04-Guides/Timetable_DatedServiceJourney_V2.md)
+- [Using DayType as a calendar]()
+- [Farezones](/04-Guides/FareZone.md)
+- []
 
+</details>
 
-Proposed Use Cases to be modeled in examples and seperate doc files her:
-- Stops
-	- Accesibility - examples with pictures (as Johan is doing with stops)
-- Organisations
-- Timetable
-- Timetable when booking
-- FareZones
-- Fares
-	- Documentation of objects and fields to use
+<details>
+<summary>
+Use cases
+</summary>
+
+- [Handling deviations using DatedServiceJourneys](/05-Use-case/DSJ.md)
+- [Daylight saving time]()
+
+</details>
+
+<br>
+
 
 # Reference Data examples
 Some data may not be contained in the exchanged dataset but provided trough a external source. Here are some implementation examples of referenced data:
 
 - [Stops](/03-ReferrenceData/01-Stops.markdown)
 - [Organisations](/03-ReferrenceData/02-Organisations.markdown)
-- [VehicleType](/03-ReferrenceData/03-VehicleType.markdown)
-- [Vehicle](/03-ReferrenceData/04-Vehicle.markdown)
+- [Vehicle](/03-ReferrenceData/04-Vehicle.markdown) and [VehicleType](/03-ReferrenceData/03-VehicleType.markdown)
