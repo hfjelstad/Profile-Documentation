@@ -88,14 +88,16 @@ classDiagram
     dataObjects <|-- CompositeFrame
     CompositeFrame : +String id
     CompositeFrame : +Int version
-    CompositeFrame: +Object AvailabilityCondition
-    CompositeFrame: +List codespace
-    CompositeFrame: +List FrameDefaults
-    CompositeFrame: +List frames
-    CompositeFrame <|-- SiteFrame
-    CompositeFrame <|-- ServiceFrame
-    CompositeFrame <|-- ServiceCalendarFrame
-    CompositeFrame <|-- ResourceFrame
+    class CompositeFrame{
+        -Object AvailabilityCondition
+        -List codespace
+        -List FrameDefaults
+        -List frames
+    }
+    frames <|-- SiteFrame
+    frames <|-- ServiceFrame
+    frames <|-- ServiceCalendarFrame
+    frames <|-- ResourceFrame
     Animal <|-- Fish
     Animal <|-- Zebra
     Animal : +int age
