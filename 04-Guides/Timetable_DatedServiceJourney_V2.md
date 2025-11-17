@@ -81,13 +81,12 @@ The shared file is prefixed with underscore ("_")
 
 ```mermaid
 ---
-title: Animal example
+title: Puplication 
 ---
 
 classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    dataObjects <|-- [CompositeFrame](/01-Frames/CompositeFrame.md)
+    [CompositeFrame](/01-Frames/CompositeFrame.md) <|-- [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
     Animal <|-- Fish
     Animal <|-- Zebra
     Animal : +int age
