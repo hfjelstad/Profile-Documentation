@@ -79,6 +79,7 @@ The shared file is prefixed with underscore ("_")
                     - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 </details>
 
+```mermaid
 ---
 title: Animal example
 ---
@@ -105,7 +106,7 @@ classDiagram
         +bool is_wild
         +run()
     }
-
+```
 
 ### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
