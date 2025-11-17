@@ -82,6 +82,7 @@ The shared file is prefixed with underscore ("_")
 ---
 title: Animal example
 ---
+
 classDiagram
     note "From Duck till Zebra"
     Animal <|-- Duck
