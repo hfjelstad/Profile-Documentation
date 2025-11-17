@@ -94,19 +94,19 @@ classDiagram
         -List FrameDefaults
         -List [frames]
     }
-    CompositeFrame --|> SiteFrame
+    CompositeFrame o-- SiteFrame
     class SiteFrame{
         +String id
         +Int version
         -List [stopPlaces]StopPlace
     }
-    SiteFrame --|> StopPlace
+    SiteFrame o-- StopPlace
     class StopPlace{
         +String id
         +Int version
         -List [quays]Quay
     }
-    CompositeFrame --|> ServiceFrame
+    CompositeFrame o-- ServiceFrame
     class ServiceFrame{
         +String id
         +Int version
@@ -114,12 +114,12 @@ classDiagram
         -List [routes]Route
         -List [journeyPatterns]JourneyPattern
     }
-    CompositeFrame --|> ServiceCalendarFrame
+    CompositeFrame o-- ServiceCalendarFrame
     class  ServiceCalendarFrame{
         +String id
         +Int version
     }
-    CompositeFrame --|> ResourceFrame
+    CompositeFrame o-- ResourceFrame
     class  ResourceFrame{
         +String id
         +Int version
