@@ -85,38 +85,47 @@ title: Puplication
 ---
 
 classDiagram
-    dataObjects <|-- CompositeFrame
-    CompositeFrame : +String id
-    CompositeFrame : +Int version
+    dataObjects --|> CompositeFrame 
     class CompositeFrame{
-        -Object AvailabilityCondition
-        -List codespace
+        +String id
+        +Int version
+        -List [validityConditions]AvailabilityCondition
+        -List [codespace]Codespace
         -List FrameDefaults
-        -List frames
+        -List [frames]
     }
-    frames <|-- SiteFrame
-    frames <|-- ServiceFrame
-    frames <|-- ServiceCalendarFrame
-    frames <|-- ResourceFrame
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
+    link CompositeFrame 'https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md'
+    CompositeFrame --|> SiteFrame
+    class SiteFrame{
+        +String id
+        +Int version
+        -List [stopPlaces]StopPlace
     }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
+    Siteframe --|> StopPlace
+    class StopPlace{
+        +String id
+        +Int version
+        -List [quays]Quay
     }
-    class Zebra{
-        +bool is_wild
-        +run()
+    CompositeFrame --|> ServiceFrame
+    class ServiceFrame{
+        +String id
+        +Int version
+        -List [lines]Line
+        -List [routes]Route
+        -List [journeyPatterns]JourneyPattern
     }
+    CompositeFrame --|> ServiceCalendarFrame
+    class  ServiceCalendarFrame{
+        +String id
+        +Int version
+    }
+    CompositeFrame --|> ResourceFrame
+    class  ResourceFrame{
+        +String id
+        +Int version
+    }
+
 ```
 
 ### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
