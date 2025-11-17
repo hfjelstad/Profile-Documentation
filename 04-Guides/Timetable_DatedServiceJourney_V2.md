@@ -85,8 +85,17 @@ title: Puplication
 ---
 
 classDiagram
-    dataObjects <|-- [CompositeFrame](/01-Frames/CompositeFrame.md)
-    [CompositeFrame](/01-Frames/CompositeFrame.md) <|-- [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
+    dataObjects <|-- CompositeFrame
+    CompositeFrame : +String id
+    CompositeFrame : +Int version
+    CompositeFrame: +Object AvailabilityCondition
+    CompositeFrame: +List codespace
+    CompositeFrame: +List FrameDefaults
+    CompositeFrame: +List frames
+    CompositeFrame <|-- SiteFrame
+    CompositeFrame <|-- ServiceFrame
+    CompositeFrame <|-- ServiceCalendarFrame
+    CompositeFrame <|-- ResourceFrame
     Animal <|-- Fish
     Animal <|-- Zebra
     Animal : +int age
