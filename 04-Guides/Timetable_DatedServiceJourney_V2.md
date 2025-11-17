@@ -94,7 +94,6 @@ classDiagram
         -List FrameDefaults
         -List [frames]
     }
-    link CompositeFrame 'https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md'
     CompositeFrame --|> SiteFrame
     class SiteFrame{
         +String id
