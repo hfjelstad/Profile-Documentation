@@ -30,6 +30,7 @@ Notes / Ideas for structure:
 NeTEx is **modular**, meaning it has different parts (frames) for different types of data. It’s designed to support **national and international data exchange**, especially for **multimodal journey planning** and **passenger information systems**.
 	
 </details>
+
 <details>
 <summary>Profiles</summary>
 
@@ -49,6 +50,29 @@ Profiles are subsets or specializations of NeTEx. They define **which parts of N
 
 	
 	
+</details>
+<details>
+<summary>XSD</summary>
+<br>
+You can use XSD (XML Schema Definition) to validate XML files by linking the XML document to an XSD schema and running a validation process that checks whether the XML structure, elements, and data types conform to the rules defined in the schema.
+
+* ☕ Java: Use SchemaFactory and Validator classes.
+* 🐍 Python: Use xmlschema.XMLSchema("person.xsd").is_valid("person.xml").
+* ⚙️ .NET: Use XmlReaderSettings with XmlSchemaSet.
+
+Click [here](https://github.com/NeTEx-CEN/NeTEx/tree/master/xsd) for the offical and current NeTEx XSD
+</details>
+<details>
+<summary>Terms</summary>
+</details>
+<details>
+<summary>Common</summary>
+<br>
+**TODO:** Short intro to Common
+
+- [DateFormats](/02-Common/01-DateFormats.markdown)
+- [Calendars](/02-Common/02-Calendars.markdown)
+
 </details>
 <details>
 <summary>Standard (NeTEx) vs Profile</summary>

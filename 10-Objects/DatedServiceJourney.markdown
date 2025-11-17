@@ -1,5 +1,3 @@
-[Home](/README.md) / [Objects](/10-Objects)This content is added from a manually generated file: 
-
 # DatedServiceJourney
   
 >[!NOTE]
@@ -34,26 +32,3 @@
 
 >[!TIP]
 >Have a look at the guide describing the simple usage of [DatedServiceJourney](/04-Guides/Timetable_DatedServiceJourney.md), or the [deviation handling](/05-Use%20case/DSJ.md)
-
-
- --------------------------- 
-
-
-
- This content is automaticly generated using NAP as source: 
-
-
-
-# DatedServiceJourney
-
-### NeTEx annotation: 
-***A particular journey of a vehicle on a particular OPERATING DAY including all modifications possibly decided by the control staff. The VIEW includes derived ancillary data from referenced entities.***
-
-| Type | Name | SubElement | NeTEx annotation | 
-| --- | --- | --- | --- | 
-| Attribute | version |  |  | 
-| Attribute | id |  |  | 
-| Element | ServiceAlteration |  |  | 
-| Reference | [ServiceJourneyRef](ServiceJourney.md) |  | ***Reference to a SERVICE JOURNEY.*** | 
-| Reference | [OperatingDayRef](OperatingDay.md) |  | ***Reference to an OPERATING DAY.*** | 
-| Reference | [DatedServiceJourneyRef](DatedServiceJourney.md) |  | ***Reference to a DATED SERVICE JOURNEY.*** | 
