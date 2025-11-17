@@ -100,7 +100,7 @@ classDiagram
         +Int version
         -List [stopPlaces]StopPlace
     }
-    Siteframe --|> StopPlace
+    SiteFrame --|> StopPlace
     class StopPlace{
         +String id
         +Int version
