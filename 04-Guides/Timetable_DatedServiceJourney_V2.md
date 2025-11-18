@@ -125,6 +125,8 @@ namespace Shared {
     }
 }
 PublicationDelivery_Shared "1" o-- "*" CompositeFrame_Shared
+CompositeFrame_Shared "1" o-- "*" ServiceFrame_Shared
+ServiceFrame_Shared "1" o-- "*" PassengerStopAssignment_Shared
 
 namespace Line {
     class PublicationDelivery{
