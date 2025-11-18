@@ -30,38 +30,44 @@ classDiagram
     click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
     CompositeFrame o-- SiteFrame
     class SiteFrame{
-        +String id
-        +Int version
-        -List~stopPlaces~ StopPlace
+        @id
+        @version
+        []List~stopPlaces~ StopPlace
     }
     SiteFrame "1" o-- "*" StopPlace
     class StopPlace{
-        +String id
-        +Int version
-        -List~quays~ Quay
+        @id
+        @version
+        []List~quays~ Quay
     }
     StopPlace "1" o-- "*" Quay
     CompositeFrame "1" o-- "*" ServiceFrame
     class ServiceFrame{
-        +String id
-        +Int version
-        -List [lines]Line
-        -List [routes]Route
-        -List [journeyPatterns]JourneyPattern
+        @id
+        @version
+        []List~lines~ Line
+        []List~routes~ Route
+        []List~journeyPatterns~ JourneyPattern
     }
     ServiceFrame "1" o-- "*" Line
     ServiceFrame "1" o-- "*" Route
     ServiceFrame "1" o-- "*" JourneyPattern
+    ServiceFrame "1" o-- "*" JourneyPattern
     CompositeFrame o-- ServiceCalendarFrame
     class  ServiceCalendarFrame{
-        +String id
-        +Int version
+        @id
+        @version
+        []List~operatingDays~ OperatingDay
     }
+    ServiceCalendarFrame "1" o-- "*" OperatingDay
     CompositeFrame o-- ResourceFrame
     class  ResourceFrame{
-        +String id
-        +Int version
+        @id
+        @version
+        []List~organisations~ 
     }
+    ResourceFrame "1" o-- "*" Operator
+    ResourceFrame "1" o-- "*" Authority
     CompositeFrame "1" o-- "*" TimetableFrame
     class TimetableFrame{
         @id 
