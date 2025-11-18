@@ -110,6 +110,7 @@ namespace Shared {
     }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
+
 namespace Line {
     class PublicationDelivery{
         @id
@@ -127,6 +128,7 @@ namespace Line {
     }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
+
 namespace NSR {
     class SiteFrame{
         @id
