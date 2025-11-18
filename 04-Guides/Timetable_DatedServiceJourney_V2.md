@@ -94,13 +94,13 @@ title: Puplication overview
 
 classDiagram
 namespace Shared {
-    class SharedPublicationDelivery{
+    class PublicationDelivery~_shared~{
         @id
         @version
         -[dataObjects] 
     }
 
-    class SharedCompositeFrame{
+    class CompositeFrame~_shared~{
         @id
         @version
         -validityConditions [AvailabilityCondition]
@@ -108,8 +108,17 @@ namespace Shared {
         -FrameDefaults [DefaultLocale]
         -frames [ServiceFrame, ServiceCalendarFrame, ResourceFrame]
     }
+    class ServiceFrame~_shared~{
+        @id
+        @version
+        []List~lines~ Line
+        []List~routes~ Route
+        []List~journeyPatterns~ JourneyPattern
+        []List~scheduledStopPoints~ ScheduledStopPoint
+        []List~stopAssignments~ PassengerStopAssignment
+    }
 }
-_PublicationDelivery "1" o-- "*" _CompositeFrame
+PublicationDelivery~_shared~ "1" o-- "*" CompositeFrame~_shared~
 
 namespace Line {
     class PublicationDelivery{
