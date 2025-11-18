@@ -143,36 +143,38 @@ namespace Line {
         -FrameDefaults [DefaultLocale]
         -frames [ServiceFrame, TimetableFrame]
     }
-    namespace ServiceFrame{
-        class ServiceFrame{
-        @id
+    class ServiceFrame{
+    @id
+    @version
+    []List~lines~ Line
+    []List~routes~ Route
+    []List~journeyPatterns~ JourneyPattern
+    []List~scheduledStopPoints~ ScheduledStopPoint
+    []List~stopAssignments~ PassengerStopAssignment
+    }
+    class JourneyPattern{
         @version
-        []List~lines~ Line
-        []List~routes~ Route
-        []List~journeyPatterns~ JourneyPattern
-        []List~scheduledStopPoints~ ScheduledStopPoint
-        []List~stopAssignments~ PassengerStopAssignment
-        }
-        class JourneyPattern{
-            @version
-            @id 
-            -pointsInSequence [StopPointInJourneyPattern]
-        }
-        class StopPointInJourneyPattern{
-            @order
-            @version
-            @id
-            +ScheduledStopPointRef @ref 
-        }
+        @id 
+        -pointsInSequence [StopPointInJourneyPattern]
     }
-    namespace TimetableFrame{ 
-        class ServiceJourney{
-
-        }
-        class DatedServiceJourney{
-
-        }
+    class StopPointInJourneyPattern{
+        @order
+        @version
+        @id
+        +ScheduledStopPointRef @ref 
+    } 
+    class TimetableFrame{
+        @id 
+        @version 
+        -vehicleJourneys [ServiceJourney, DatedServiceJourney]
     }
+    class ServiceJourney{
+
+    }
+    class DatedServiceJourney{
+
+    }
+    
 
 
 }
