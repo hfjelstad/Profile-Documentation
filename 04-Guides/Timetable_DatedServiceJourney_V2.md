@@ -71,13 +71,13 @@ classDiagram
     ResourceFrame "1" o-- "*" Operator
     ResourceFrame "1" o-- "*" Authority
     CompositeFrame "1" o-- "*" TimetableFrame
-    class TimetableFrame{
-        @id 
-        @version 
-        []List~vehicleJourneys~ ServiceJourney, DatedServiceJourney
-    }
-    TimetableFrame "1" o-- "*" ServiceJourney
-    TimetableFrame "1" o-- "*" DatedServiceJourney
+        class TimetableFrame{
+            @id 
+            @version 
+            []List~vehicleJourneys~ ServiceJourney, DatedServiceJourney
+        }
+        TimetableFrame "1" o-- "*" ServiceJourney
+        TimetableFrame "1" o-- "*" DatedServiceJourney
 
 ```
 
@@ -143,8 +143,39 @@ namespace Line {
         -FrameDefaults [DefaultLocale]
         -frames [ServiceFrame, TimetableFrame]
     }
+    class ServiceFrame{
+        @id
+        @version
+        []List~lines~ Line
+        []List~routes~ Route
+        []List~journeyPatterns~ JourneyPattern
+        []List~scheduledStopPoints~ ScheduledStopPoint
+        []List~stopAssignments~ PassengerStopAssignment
+    }
+    class TimetableFrame{
+        @id 
+        @version 
+        []List~vehicleJourneys~ ServiceJourney, DatedServiceJourney
+    }
+    class JourneyPattern{
+        @version
+        @id 
+        -pointsInSequence [StopPointInJourneyPattern]
+    }
+    class StopPointInJourneyPattern{
+        @order
+        @version
+        @id
+        +ScheduledStopPointRef @ref 
+    }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
+CompositeFrame "1" o-- "*" TimetableFrame
+TimetableFrame "1" o-- "*" ServiceJourney
+TimetableFrame "1" o-- "*" DatedServiceJourney
+ServiceJourney "1" --!> "1" JourneyPattern
+JourneyPattern "1" o-- "*" StopPointInJourneyPattern
+StopPointInJourneyPattern "1" --!> "1" PassengerStopAssignment_Shared
 namespace NSR {
     class SiteFrame{
         @id
