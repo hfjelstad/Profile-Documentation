@@ -85,9 +85,7 @@ title: Puplication
 ---
 
 classDiagram
-    dataObjects --|> CompositeFrame
-    click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
-    class CompositeFrame{
+    class ~dataObjects~CompositeFrame{
         +String id
         +Int version
         -List~validityConditions~ AvailabilityCondition
@@ -95,6 +93,7 @@ classDiagram
         -List~FrameDefaults~ DefaultLocale
         -List~frames~
     }
+    click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
     CompositeFrame o-- SiteFrame
     class SiteFrame{
         +String id
