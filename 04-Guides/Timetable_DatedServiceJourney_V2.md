@@ -17,7 +17,7 @@ classDiagram
     class PublicationDelivery{
         @id
         @version
-        -List~dataObjects~ 
+        []List~dataObjects~ 
     }
     class CompositeFrame{
         +String id
