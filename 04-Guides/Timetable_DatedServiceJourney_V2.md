@@ -13,10 +13,10 @@ title: Puplication overview
 ---
 
 classDiagram
-    PublicationDelivery o-- CompositeFrame
+    PublicationDelivery "1" o-- "*" CompositeFrame
     class PublicationDelivery{
-        +id (1..1)
-        +Int version
+        @id
+        @version
         -List~dataObjects~ 
     }
     class CompositeFrame{
