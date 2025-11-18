@@ -173,9 +173,9 @@ PublicationDelivery "1" o-- "*" CompositeFrame
 CompositeFrame "1" o-- "*" TimetableFrame
 TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
-ServiceJourney "1" --!> "1" JourneyPattern
+ServiceJourney "1" --|> "1" JourneyPattern
 JourneyPattern "1" o-- "*" StopPointInJourneyPattern
-StopPointInJourneyPattern "1" --!> "1" PassengerStopAssignment_Shared
+StopPointInJourneyPattern "1" --|> "1" PassengerStopAssignment_Shared
 namespace NSR {
     class SiteFrame{
         @id
