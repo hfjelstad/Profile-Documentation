@@ -87,6 +87,60 @@ classDiagram
 
 ### Shared 
 
+```mermaid
+---
+title: Puplication overview 
+---
+
+classDiagram
+namespace Shared {
+    PublicationDelivery "1" o-- "*" CompositeFrame
+    class PublicationDelivery{
+        @id
+        @version
+        -[dataObjects] 
+    }
+    class CompositeFrame{
+        @id
+        @version
+        -validityConditions [AvailabilityCondition]
+        -codespaces [Codespace]
+        -FrameDefaults [DefaultLocale]
+        -frames [ServiceFrame, ServiceCalendarFrame, ResourceFrame]
+    }
+}
+namespace Line {
+    PublicationDelivery "1" o-- "*" CompositeFrame
+    class PublicationDelivery{
+        @id
+        @version
+        -[dataObjects] 
+    }
+    class CompositeFrame{
+        @id
+        @version
+        -validityConditions [AvailabilityCondition]
+        -codespaces [Codespace]
+        -FrameDefaults [DefaultLocale]
+        -frames [ServiceFrame, TimetableFrame]
+    }
+}
+namespace NSR {
+    class SiteFrame{
+        @id
+        @version
+        []List~stopPlaces~ StopPlace
+    }
+    SiteFrame "1" o-- "*" StopPlace
+    class StopPlace{
+        @id
+        @version
+        []List~quays~ Quay
+    }
+    StopPlace "1" o-- "*" Quay
+}
+```
+
 The shared file is prefixed with underscore ("_")
 
 - [dataObjects]
