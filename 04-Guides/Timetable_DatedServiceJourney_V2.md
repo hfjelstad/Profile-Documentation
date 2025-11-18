@@ -117,6 +117,12 @@ namespace Shared {
         []List~scheduledStopPoints~ ScheduledStopPoint
         []List~stopAssignments~ PassengerStopAssignment
     }
+    class PassengerStopAssignment~_shared~{
+        @order
+        @version
+        @id 
+        +QuayRef @ref
+    }
 }
 PublicationDelivery~_shared~ "1" o-- "*" CompositeFrame~_shared~
 
@@ -157,7 +163,7 @@ namespace NSR {
     }
     
 }
-SiteFrame o-- SharedPublicationDelivery
+SiteFrame o-- PassengerStopAssignment~_shared~
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
 ```
