@@ -168,6 +168,12 @@ namespace Line {
         @id
         +ScheduledStopPointRef @ref 
     }
+    class ServiceJourney{
+
+    }
+    class DatedServiceJourney{
+        
+    }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
 CompositeFrame "1" o-- "*" TimetableFrame
