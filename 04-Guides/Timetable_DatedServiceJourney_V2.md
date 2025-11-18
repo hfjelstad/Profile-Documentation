@@ -180,6 +180,7 @@ CompositeFrame "1" o-- "*" TimetableFrame
 TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
 ServiceJourney "1" --|> "1" JourneyPattern
+ServiceFrame "1" o-- "*" JourneyPattern
 JourneyPattern "1" o-- "*" StopPointInJourneyPattern
 StopPointInJourneyPattern "1" --|> "1" PassengerStopAssignment_Shared
 namespace NSR {
