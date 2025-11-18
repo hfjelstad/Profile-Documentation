@@ -148,6 +148,7 @@ namespace NSR {
     }
     
 }
+SiteFrame --!> _PublicationDelivery
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
 ```
