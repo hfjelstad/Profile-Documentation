@@ -172,7 +172,7 @@ namespace Line {
 
     }
     class DatedServiceJourney{
-        
+
     }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
@@ -202,7 +202,7 @@ namespace NSR {
     }
     
 }
-SiteFrame o-- PassengerStopAssignment_Shared
+Quay o-- PassengerStopAssignment_Shared
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
 ```
