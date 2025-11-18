@@ -225,7 +225,7 @@ Quay o-- PassengerStopAssignment_Shared
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
 ```
-
+<!--
 The shared file is prefixed with underscore ("_")
 
 - [dataObjects]
@@ -266,7 +266,7 @@ The shared file is prefixed with underscore ("_")
                     - [ServiceJourney](/10-Objects/ServiceJourney.md)
                     - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 </details>
-
+-->
 ### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
 There can be 1:* DatedServiceJourney to describe the calendar for a peraticular ServiceJourney
