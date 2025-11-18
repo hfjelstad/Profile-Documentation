@@ -85,7 +85,8 @@ title: Puplication
 ---
 
 classDiagram
-    dataObjects --|> CompositeFrame 
+    dataObjects --|> CompositeFrame
+    click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
     class CompositeFrame{
         +String id
         +Int version
