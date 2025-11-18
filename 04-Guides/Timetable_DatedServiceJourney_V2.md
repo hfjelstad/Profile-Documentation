@@ -17,15 +17,15 @@ classDiagram
     class PublicationDelivery{
         @id
         @version
-        []List~dataObjects~ 
+        -[dataObjects] 
     }
     class CompositeFrame{
-        +String id
-        +Int version
-        -List~validityConditions~ AvailabilityCondition
-        -List~codespace~ Codespace
-        -List~FrameDefaults~ DefaultLocale
-        -List~frames~
+        @id
+        @version
+        -validityConditions [AvailabilityCondition]
+        -codespaces [Codespace]
+        -FrameDefaults [DefaultLocale]
+        -frames [SiteFrame, ServiceFrame, ServiceCalendarFrame, ResourceFrame, TimetableFrame]
     }
     click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
     CompositeFrame o-- SiteFrame
@@ -92,7 +92,7 @@ The shared file is prefixed with underscore ("_")
 - [dataObjects]
     - [CompositeFrame](/01-Frames/CompositeFrame.md)
         - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
-        - [codespace] [Codespace](/10-Objects/Codespace.md)
+        - [codespaces] [Codespace](/10-Objects/Codespace.md)
         - FrameDefaults
             - DefaultLocale
         - [frames]
@@ -112,7 +112,7 @@ The shared file is prefixed with underscore ("_")
 - [dataObjects]
     - [CompositeFrame](/01-Frames/CompositeFrame.md)
         - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
-        - [codespace] [Codespace](/10-Objects/Codespace.md)
+        - [codespaces] [Codespace](/10-Objects/Codespace.md)
         - FrameDefaults
             - DefaultLocale
         - [frames]
