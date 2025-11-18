@@ -128,7 +128,7 @@ namespace Line {
     }
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
-
+Shared "1" o-- "*" Line
 namespace NSR {
     class SiteFrame{
         @id
