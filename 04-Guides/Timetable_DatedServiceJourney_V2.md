@@ -89,22 +89,22 @@ classDiagram
     class CompositeFrame{
         +String id
         +Int version
-        -List [validityConditions]AvailabilityCondition
-        -List [codespace]Codespace
-        -List FrameDefaults
-        -List [frames]
+        -List~validityConditions~ AvailabilityCondition
+        -List~codespace~ Codespace
+        -List~FrameDefaults~ DefaultLocale
+        -List~frames~
     }
     CompositeFrame o-- SiteFrame
     class SiteFrame{
         +String id
         +Int version
-        -List [stopPlaces]StopPlace
+        -List~stopPlaces~ StopPlace
     }
     SiteFrame o-- StopPlace
     class StopPlace{
         +String id
         +Int version
-        -List [quays]Quay
+        -List~quays~ Quay
     }
     CompositeFrame o-- ServiceFrame
     class ServiceFrame{
