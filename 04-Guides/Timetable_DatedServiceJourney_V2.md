@@ -94,13 +94,13 @@ title: Puplication overview
 
 classDiagram
 namespace Shared {
-    class PublicationDelivery~_shared~{
+    class PublicationDelivery(Shared){
         @id
         @version
         -[dataObjects] 
     }
 
-    class CompositeFrame~_shared~{
+    class CompositeFrame(Shared){
         @id
         @version
         -validityConditions [AvailabilityCondition]
@@ -108,7 +108,7 @@ namespace Shared {
         -FrameDefaults [DefaultLocale]
         -frames [ServiceFrame, ServiceCalendarFrame, ResourceFrame]
     }
-    class ServiceFrame~_shared~{
+    class ServiceFrame(Shared){
         @id
         @version
         []List~lines~ Line
@@ -117,14 +117,14 @@ namespace Shared {
         []List~scheduledStopPoints~ ScheduledStopPoint
         []List~stopAssignments~ PassengerStopAssignment
     }
-    class PassengerStopAssignment~_shared~{
+    class PassengerStopAssignment(Shared){
         @order
         @version
         @id 
         +QuayRef @ref
     }
 }
-PublicationDelivery~_shared~ "1" o-- "*" CompositeFrame~_shared~
+PublicationDelivery(Shared) "1" o-- "*" CompositeFrame(Shared)
 
 namespace Line {
     class PublicationDelivery{
@@ -163,7 +163,7 @@ namespace NSR {
     }
     
 }
-SiteFrame o-- PassengerStopAssignment~_shared~
+SiteFrame o-- PassengerStopAssignment(Shared)
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
 ```
