@@ -192,6 +192,7 @@ namespace Line {
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
 CompositeFrame "1" o-- "*" TimetableFrame
+CompositeFrame "1" o-- "*" ServiceFrame
 TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
 ServiceJourney "1" o-- "*" DatedServiceJourney
