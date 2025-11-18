@@ -7,31 +7,60 @@ A description of the minimum information needed for a timtable using DatedServic
 <details open>
 <summary>EPI Profile</summary>
 
-- [dataObjects]
-    - [CompositeFrame](/01-Frames/CompositeFrame.md)
-        - [validityConditions] [AvailabilityCondition](/10-Objects/AvailabilityCondition.md)
-        - [codespace] [Codespace](/10-Objects/Codespace.md)
-        - FrameDefaults
-            - DefaultLocale
-        - [frames]
-            - [SiteFrame](/01-Frames/SiteFrame.md)
-                - [stopPlaces] [StopPlace](/10-Objects/StopPlace.md)
-                    - [quays] [Quay](/10-Objects/Quay.md)
-            - [ServiceFrame](/01-Frames/ServiceFrame.md)
-                - [lines] [Line](/10-Objects/Line.md)
-                - [routes] [Route](/10-Objects/Route.md)
-                - [journeyPatterns] [JourneyPattern](/10-Objects/JourneyPattern.md)
-                    - [pointsInSequence] [StopPointInJourneyPattern](/10-Objects/StopPointInJourneyPattern.md)
-                - [scheduledStopPoints] [ScheduledStopPoint](/10-Objects/ScheduledStopPoint.md)
-                - [stopAssignments] [PassengerStopAssignment](/10-Objects/PassengerStopAssignment.md)
-            - [ServiceCalendarFrame](/01-Frames/ServiceCalendarFrame.md)
-                - [operatingDays] [OperatingDay](/10-Objects/OperatingDay.md)
-            - [ResourceFrame](/01-Frames/ResourceFrame.md)
-                - [organisations] [Operator](/10-Objects/Operator.md)
-            - [TimetableFrame](/01-Frames/TimetableFrame.md)
-                - [vehicleJourneys]
-                    - [ServiceJourney](/10-Objects/ServiceJourney.md)
-                    - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
+```mermaid
+---
+title: Puplication overview 
+---
+
+classDiagram
+    PublicationDelivery o-- CompositeFrame
+    class PublicationDelivery{
+        +id (1..1)
+        +Int version
+        -List~dataObjects~ 
+    }
+    class CompositeFrame{
+        +String id
+        +Int version
+        -List~validityConditions~ AvailabilityCondition
+        -List~codespace~ Codespace
+        -List~FrameDefaults~ DefaultLocale
+        -List~frames~
+    }
+    click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
+    CompositeFrame o-- SiteFrame
+    class SiteFrame{
+        +String id
+        +Int version
+        -List~stopPlaces~ StopPlace
+    }
+    SiteFrame "1" o-- "*" StopPlace
+    class StopPlace{
+        +String id
+        +Int version
+        -List~quays~ Quay
+    }
+    CompositeFrame o-- ServiceFrame
+    class ServiceFrame{
+        +String id
+        +Int version
+        -List [lines]Line
+        -List [routes]Route
+        -List [journeyPatterns]JourneyPattern
+    }
+    CompositeFrame o-- ServiceCalendarFrame
+    class  ServiceCalendarFrame{
+        +String id
+        +Int version
+    }
+    CompositeFrame o-- ResourceFrame
+    class  ResourceFrame{
+        +String id
+        +Int version
+    }
+
+```
+
 </details>
 <details>
 <summary>Nordic profile</summary>
@@ -78,60 +107,6 @@ The shared file is prefixed with underscore ("_")
                     - [ServiceJourney](/10-Objects/ServiceJourney.md)
                     - [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 </details>
-
-```mermaid
----
-title: Puplication overview 
----
-
-classDiagram
-    PublicationDelivery o-- CompositeFrame
-    class PublicationDeliver{
-        +String id
-        +Int version
-        -List~dataObjects~ 
-    }
-    class CompositeFrame{
-        +String id
-        +Int version
-        -List~validityConditions~ AvailabilityCondition
-        -List~codespace~ Codespace
-        -List~FrameDefaults~ DefaultLocale
-        -List~frames~
-    }
-    click CompositeFrame href "https://github.com/hfjelstad/Profile-Documentation/blob/main/01-Frames/CompositeFrame.md"
-    CompositeFrame o-- SiteFrame
-    class SiteFrame{
-        +String id
-        +Int version
-        -List~stopPlaces~ StopPlace
-    }
-    SiteFrame o-- StopPlace
-    class StopPlace{
-        +String id
-        +Int version
-        -List~quays~ Quay
-    }
-    CompositeFrame o-- ServiceFrame
-    class ServiceFrame{
-        +String id
-        +Int version
-        -List [lines]Line
-        -List [routes]Route
-        -List [journeyPatterns]JourneyPattern
-    }
-    CompositeFrame o-- ServiceCalendarFrame
-    class  ServiceCalendarFrame{
-        +String id
-        +Int version
-    }
-    CompositeFrame o-- ResourceFrame
-    class  ResourceFrame{
-        +String id
-        +Int version
-    }
-
-```
 
 ### [DatedServiceJourney](/10-Objects/DatedServiceJourney.md)
 The basic structure of a DatedServiceJourney provides a unique identifier, a reference to a [ServiceJourney](#ServiceJourney) and a single [OperatingDay](#OperatingDay) for this Journey.
