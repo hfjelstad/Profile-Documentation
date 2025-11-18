@@ -99,7 +99,7 @@ namespace Shared {
         @version
         -[dataObjects] 
     }
-    PublicationDelivery "1" o-- "*" CompositeFrame
+    
     class CompositeFrame{
         @id
         @version
@@ -109,13 +109,14 @@ namespace Shared {
         -frames [ServiceFrame, ServiceCalendarFrame, ResourceFrame]
     }
 }
+PublicationDelivery "1" o-- "*" CompositeFrame
 namespace Line {
     class PublicationDelivery{
         @id
         @version
         -[dataObjects] 
     }
-    PublicationDelivery "1" o-- "*" CompositeFrame
+    
     class CompositeFrame{
         @id
         @version
@@ -125,20 +126,23 @@ namespace Line {
         -frames [ServiceFrame, TimetableFrame]
     }
 }
+PublicationDelivery "1" o-- "*" CompositeFrame
 namespace NSR {
     class SiteFrame{
         @id
         @version
         []List~stopPlaces~ StopPlace
     }
-    SiteFrame "1" o-- "*" StopPlace
+    
     class StopPlace{
         @id
         @version
         []List~quays~ Quay
     }
-    StopPlace "1" o-- "*" Quay
+    
 }
+SiteFrame "1" o-- "*" StopPlace
+StopPlace "1" o-- "*" Quay
 ```
 
 The shared file is prefixed with underscore ("_")
