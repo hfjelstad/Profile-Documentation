@@ -94,12 +94,12 @@ title: Puplication overview
 
 classDiagram
 namespace Shared {
-    PublicationDelivery "1" o-- "*" CompositeFrame
     class PublicationDelivery{
         @id
         @version
         -[dataObjects] 
     }
+    PublicationDelivery "1" o-- "*" CompositeFrame
     class CompositeFrame{
         @id
         @version
@@ -110,12 +110,12 @@ namespace Shared {
     }
 }
 namespace Line {
-    PublicationDelivery "1" o-- "*" CompositeFrame
     class PublicationDelivery{
         @id
         @version
         -[dataObjects] 
     }
+    PublicationDelivery "1" o-- "*" CompositeFrame
     class CompositeFrame{
         @id
         @version
