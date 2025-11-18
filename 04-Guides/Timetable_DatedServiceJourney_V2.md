@@ -143,7 +143,8 @@ namespace Line {
         -FrameDefaults [DefaultLocale]
         -frames [ServiceFrame, TimetableFrame]
     }
-    class ServiceFrame{
+    namespace ServiceFrame{
+        class ServiceFrame{
         @id
         @version
         []List~lines~ Line
@@ -151,29 +152,29 @@ namespace Line {
         []List~journeyPatterns~ JourneyPattern
         []List~scheduledStopPoints~ ScheduledStopPoint
         []List~stopAssignments~ PassengerStopAssignment
+        }
+        class JourneyPattern{
+            @version
+            @id 
+            -pointsInSequence [StopPointInJourneyPattern]
+        }
+        class StopPointInJourneyPattern{
+            @order
+            @version
+            @id
+            +ScheduledStopPointRef @ref 
+        }
     }
-    class TimetableFrame{
-        @id 
-        @version 
-        []List~vehicleJourneys~ ServiceJourney, DatedServiceJourney
-    }
-    class JourneyPattern{
-        @version
-        @id 
-        -pointsInSequence [StopPointInJourneyPattern]
-    }
-    class StopPointInJourneyPattern{
-        @order
-        @version
-        @id
-        +ScheduledStopPointRef @ref 
-    }
-    class ServiceJourney{
+    namespace TimetableFrame{ 
+        class ServiceJourney{
 
-    }
-    class DatedServiceJourney{
+        }
+        class DatedServiceJourney{
 
+        }
     }
+
+
 }
 PublicationDelivery "1" o-- "*" CompositeFrame
 CompositeFrame "1" o-- "*" TimetableFrame
