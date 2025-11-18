@@ -199,7 +199,7 @@ ServiceJourney "1" o-- "*" TimetabledPassingTime
 TimetabledPassingTime "1" --|> "1" StopPointInJourneyPattern
 ServiceFrame "1" o-- "*" JourneyPattern
 JourneyPattern "1" o-- "*" StopPointInJourneyPattern
-StopPointInJourneyPattern "1" <|--> "1" PassengerStopAssignment_Shared
+StopPointInJourneyPattern "1" <|-- "1" PassengerStopAssignment_Shared
 namespace NSR {
     class SiteFrame{
         @id
