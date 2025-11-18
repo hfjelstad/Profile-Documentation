@@ -48,11 +48,13 @@ classDiagram
         []List~lines~ Line
         []List~routes~ Route
         []List~journeyPatterns~ JourneyPattern
+        []List~scheduledStopPoints~ ScheduledStopPoint
+        []List~stopAssignments~ PassengerStopAssignment
     }
     ServiceFrame "1" o-- "*" Line
     ServiceFrame "1" o-- "*" Route
     ServiceFrame "1" o-- "*" JourneyPattern
-    ServiceFrame "1" o-- "*" JourneyPattern
+    ServiceFrame "1" o-- "*" ScheduledStopPoint
     CompositeFrame o-- ServiceCalendarFrame
     class  ServiceCalendarFrame{
         @id
@@ -64,7 +66,7 @@ classDiagram
     class  ResourceFrame{
         @id
         @version
-        []List~organisations~ 
+        []List~organisations~ Operator, Authority
     }
     ResourceFrame "1" o-- "*" Operator
     ResourceFrame "1" o-- "*" Authority
@@ -72,7 +74,7 @@ classDiagram
     class TimetableFrame{
         @id 
         @version 
-        [vehicleJourneys]
+        []List~vehicleJourneys~ ServiceJourney, DatedServiceJourney
     }
     TimetableFrame "1" o-- "*" ServiceJourney
     TimetableFrame "1" o-- "*" DatedServiceJourney
