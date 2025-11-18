@@ -40,7 +40,8 @@ classDiagram
         +Int version
         -List~quays~ Quay
     }
-    CompositeFrame o-- ServiceFrame
+    StopPlace "1" o-- "*" Quay
+    CompositeFrame "1" o-- "*" ServiceFrame
     class ServiceFrame{
         +String id
         +Int version
@@ -48,6 +49,9 @@ classDiagram
         -List [routes]Route
         -List [journeyPatterns]JourneyPattern
     }
+    ServiceFrame "1" o-- "*" Line
+    ServiceFrame "1" o-- "*" Route
+    ServiceFrame "1" o-- "*" JourneyPattern
     CompositeFrame o-- ServiceCalendarFrame
     class  ServiceCalendarFrame{
         +String id
@@ -58,6 +62,14 @@ classDiagram
         +String id
         +Int version
     }
+    CompositeFrame "1" o-- "*" TimetableFrame
+    class TimetableFrame{
+        @id 
+        @version 
+        [vehicleJourneys]
+    }
+    TimetableFrame "1" o-- "*" ServiceJourney
+    TimetableFrame "1" o-- "*" DatedServiceJourney
 
 ```
 
