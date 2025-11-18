@@ -81,11 +81,17 @@ The shared file is prefixed with underscore ("_")
 
 ```mermaid
 ---
-title: Puplication 
+title: Puplication overview 
 ---
 
 classDiagram
-    class ~dataObjects~CompositeFrame{
+    PublicationDelivery o-- CompositeFrame
+    class PublicationDeliver{
+        +String id
+        +Int version
+        -List~dataObjects~ 
+    }
+    class CompositeFrame{
         +String id
         +Int version
         -List~validityConditions~ AvailabilityCondition
