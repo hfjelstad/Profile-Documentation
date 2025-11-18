@@ -94,13 +94,13 @@ title: Puplication overview
 
 classDiagram
 namespace Shared {
-    class PublicationDelivery{
+    class _PublicationDelivery{
         @id
         @version
         -[dataObjects] 
     }
-    
-    class CompositeFrame{
+
+    class _CompositeFrame{
         @id
         @version
         -validityConditions [AvailabilityCondition]
@@ -109,7 +109,7 @@ namespace Shared {
         -frames [ServiceFrame, ServiceCalendarFrame, ResourceFrame]
     }
 }
-PublicationDelivery "1" o-- "*" CompositeFrame
+_PublicationDelivery "1" o-- "*" _CompositeFrame
 
 namespace Line {
     class PublicationDelivery{
@@ -137,6 +137,12 @@ namespace NSR {
     }
     
     class StopPlace{
+        @id
+        @version
+        []List~quays~ Quay
+    }
+
+    class Quay{
         @id
         @version
         []List~quays~ Quay
