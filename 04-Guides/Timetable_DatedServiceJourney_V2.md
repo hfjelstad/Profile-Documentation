@@ -181,6 +181,7 @@ namespace LineFile {
     class JourneyPattern{
         @version
         @id 
+        +RouteRef @ref
         -pointsInSequence [StopPointInJourneyPattern]
     }
 
