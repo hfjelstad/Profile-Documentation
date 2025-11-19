@@ -4,7 +4,7 @@
 A description of the minimum information needed for a timtable using DatedServiceJourney as calendar
 
 ### PublicationDelivery:
-<details open>
+<details>
 <summary>EPI Profile</summary>
 
 ```mermaid
@@ -82,7 +82,7 @@ classDiagram
 ```
 
 </details>
-<details>
+<details open>
 <summary>Nordic profile</summary>
 
 ### Shared 
@@ -111,11 +111,8 @@ namespace Shared {
     class ServiceFrame_Shared{
         @id
         @version
-        []List~lines~ Line
-        []List~routes~ Route
-        []List~journeyPatterns~ JourneyPattern
-        []List~scheduledStopPoints~ ScheduledStopPoint
-        []List~stopAssignments~ PassengerStopAssignment
+        -scheduledStopPoints [ScheduledStopPoint]
+        -stopAssignments [PassengerStopAssignment]
     }
     class PassengerStopAssignment_Shared{
         @order
@@ -129,16 +126,12 @@ namespace Shared {
         @id 
     }
 }
-PublicationDelivery_Shared "1" o-- "*" CompositeFrame_Shared
-CompositeFrame_Shared "1" o-- "*" ServiceFrame_Shared
-ServiceFrame_Shared "1" o-- "*" PassengerStopAssignment_Shared
-ServiceFrame_Shared "1" o-- "*" ScheduledStopPoint_Shared
 
 namespace Line {
     class PublicationDelivery{
         @id
         @version
-        -[dataObjects] 
+        -dataObjects [CompositeFrame, SiteFrame, ServiceFrame...] 
     }
     
     class CompositeFrame{
@@ -150,63 +143,53 @@ namespace Line {
         -frames [ServiceFrame, TimetableFrame]
     }
     class ServiceFrame{
-    @id
-    @version
-    []List~lines~ Line
-    []List~routes~ Route
-    []List~journeyPatterns~ JourneyPattern
-    []List~scheduledStopPoints~ ScheduledStopPoint
-    []List~stopAssignments~ PassengerStopAssignment
+        @id
+        @version
+        -lines [Line]
+        -routes [Route]
+        -journeyPatterns [JourneyPattern]
     }
+
     class JourneyPattern{
         @version
         @id 
         -pointsInSequence [StopPointInJourneyPattern]
     }
+
     class StopPointInJourneyPattern{
         @order
         @version
         @id
         +ScheduledStopPointRef @ref 
-    } 
+    }
+
     class TimetableFrame{
         @id 
         @version 
         -vehicleJourneys [ServiceJourney, DatedServiceJourney]
     }
+
     class ServiceJourney{
         @version
         @id 
         +JourneyPatternRef @ref 
         -passingTimes [TimetabledPassingTime]
     }
+
     class TimetabledPassingTime{
         @version
         @id
         +StopPointInJourneyPatternRef @ref   
     }
+
     class DatedServiceJourney{
         @version
         @id 
         +ServiceJourneyRef @ref 
         +OperatingDayRef @ref
-    }
-    
-
-
+    }    
 }
-PublicationDelivery "1" o-- "*" CompositeFrame
-CompositeFrame "1" o-- "*" TimetableFrame
-CompositeFrame "1" o-- "*" ServiceFrame
-TimetableFrame "1" o-- "*" ServiceJourney
-TimetableFrame "1" o-- "*" DatedServiceJourney
-ServiceJourney "1" o-- "*" DatedServiceJourney
-ServiceJourney "1" o-- "*" TimetabledPassingTime
-TimetabledPassingTime "1" --|> "1" StopPointInJourneyPattern
-ServiceFrame "1" o-- "*" JourneyPattern
-JourneyPattern "1" o-- "*" StopPointInJourneyPattern
-ScheduledStopPoint_Shared "1" <|-- "1" PassengerStopAssignment_Shared
-StopPointInJourneyPattern "1" --|> "1" ScheduledStopPoint_Shared
+
 namespace NSR {
     class SiteFrame{
         @id
@@ -224,12 +207,46 @@ namespace NSR {
         @id
         @version
         []List~quays~ Quay
-    }
-    
+    }  
 }
-Quay o-- PassengerStopAssignment_Shared
+
+PublicationDelivery_Shared "1" o-- "*" CompositeFrame_Shared
+
+PublicationDelivery "1" o-- "*" CompositeFrame
+
+CompositeFrame_Shared "1" o-- "*" ServiceFrame_Shared
+
+CompositeFrame "1" o-- "*" TimetableFrame
+CompositeFrame "1" o-- "*" ServiceFrame
+
+ServiceFrame_Shared "1" o-- "*" PassengerStopAssignment_Shared
+ServiceFrame_Shared "1" o-- "*" ScheduledStopPoint_Shared
+
+ServiceFrame "1" o-- "*" JourneyPattern
+
+TimetableFrame "1" o-- "*" ServiceJourney
+TimetableFrame "1" o-- "*" DatedServiceJourney
+
+ServiceJourney "1" o-- "*" DatedServiceJourney
+ServiceJourney "1" o-- "*" TimetabledPassingTime
+
+TimetabledPassingTime "1" --|> "1" StopPointInJourneyPattern
+
+JourneyPattern "1" o-- "*" StopPointInJourneyPattern
+ScheduledStopPoint_Shared "1" <|-- "1" PassengerStopAssignment_Shared
+StopPointInJourneyPattern "1" --|> "1" ScheduledStopPoint_Shared
+
 SiteFrame "1" o-- "*" StopPlace
 StopPlace "1" o-- "*" Quay
+Quay o-- PassengerStopAssignment_Shared
+
+click CompositeFrame href "https://github.com/NeTEx-CEN/test-Profile-Documentation/blob/xml-2-markdown/01-Frames/CompositeFrame.md"
+
+click DatedServiceJourney href "https://github.com/NeTEx-CEN/test-Profile-Documentation/blob/xml-2-markdown/10-Objects/DatedServiceJourney.md"
+click ServiceJourney href "https://github.com/NeTEx-CEN/test-Profile-Documentation/blob/xml-2-markdown/10-Objects/ServiceJourney.md"
+click StopPlace href "https://github.com/NeTEx-CEN/test-Profile-Documentation/blob/xml-2-markdown/10-Objects/StopPlace.md"
+click Quay href "https://github.com/NeTEx-CEN/test-Profile-Documentation/blob/xml-2-markdown/10-Objects/Quay.md"
+
 ```
 <!--
 The shared file is prefixed with underscore ("_")
