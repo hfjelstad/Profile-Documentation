@@ -248,7 +248,7 @@ TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
 
 ServiceJourney "1" o-- "*" DatedServiceJourney
-ServiceJourney "1" o-- "*" TimetabledPassingTime
+ServiceJourney "1" --o "*" TimetabledPassingTime
 
 TimetabledPassingTime "1" --|> "1" StopPointInJourneyPattern
 
