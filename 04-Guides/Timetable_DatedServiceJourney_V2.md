@@ -142,7 +142,7 @@ namespace Shared {
     }
 }
 
-namespace Line {
+namespace LineFile {
     class PublicationDelivery{
         @id
         @version
