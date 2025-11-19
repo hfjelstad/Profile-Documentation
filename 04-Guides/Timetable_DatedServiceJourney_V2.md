@@ -222,19 +222,18 @@ namespace NSR {
     class SiteFrame{
         @id
         @version
-        []List~stopPlaces~ StopPlace
+        -stopPlaces [StopPlace]
     }
     
     class StopPlace{
         @id
         @version
-        []List~quays~ Quay
+        -quays [Quay]
     }
 
     class Quay{
         @id
         @version
-        []List~quays~ Quay
     }  
 }
 
