@@ -85,7 +85,7 @@ classDiagram
 <details open>
 <summary>Nordic profile</summary>
 
-### Shared 
+### Multiple files and external referenced data 
 
 ```mermaid
 ---
@@ -97,7 +97,7 @@ namespace Shared {
     class PublicationDelivery_Shared{
         @id
         @version
-        -[dataObjects] 
+        -dataObjects [CompositeFrame, SiteFrame, ServiceFrame...] 
     }
 
     class CompositeFrame_Shared{
