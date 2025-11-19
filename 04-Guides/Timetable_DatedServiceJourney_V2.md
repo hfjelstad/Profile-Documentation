@@ -172,6 +172,12 @@ namespace LineFile {
         +PublicCode
     }
 
+    class Route{
+        @id
+        @version
+        +LineRef @ref
+    }
+
     class JourneyPattern{
         @version
         @id 
@@ -251,6 +257,11 @@ OperatingDay_Shared "1" o-- "*" DatedServiceJourney
 
 ServiceFrame "1" o-- "*" JourneyPattern
 ServiceFrame o-- Line
+ServiceFrame o-- Route
+
+Route o-- JourneyPattern
+
+Line o-- Route
 
 TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
