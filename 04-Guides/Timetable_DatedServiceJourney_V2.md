@@ -230,7 +230,7 @@ PublicationDelivery_Shared "1" o-- "*" CompositeFrame_Shared
 PublicationDelivery "1" o-- "*" CompositeFrame
 
 CompositeFrame_Shared "1" o-- "*" ServiceFrame_Shared
-CompositeFrame_Shared "1" o-- "*" ServiceCalendar_Shared
+CompositeFrame_Shared "1" o-- "*" ServiceCalendarFrame_Shared
 
 CompositeFrame "1" o-- "*" TimetableFrame
 CompositeFrame "1" o-- "*" ServiceFrame
@@ -238,7 +238,7 @@ CompositeFrame "1" o-- "*" ServiceFrame
 ServiceFrame_Shared "1" o-- "*" PassengerStopAssignment_Shared
 ServiceFrame_Shared "1" o-- "*" ScheduledStopPoint_Shared
 
-ServiceCalendar_Shared "1" o-- "*" OperatingDay_Shared
+ServiceCalendarFrame_Shared "1" o-- "*" OperatingDay_Shared
 
 OperatingDay_Shared "1" o-- "*" DatedServiceJourney
 
