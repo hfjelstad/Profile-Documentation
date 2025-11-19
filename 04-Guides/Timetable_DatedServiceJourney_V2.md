@@ -165,6 +165,13 @@ namespace Line {
         -journeyPatterns [JourneyPattern]
     }
 
+    class Line{
+        @id
+        @version
+        +Name
+        +PublicCode
+    }
+
     class JourneyPattern{
         @version
         @id 
@@ -243,6 +250,7 @@ ServiceCalendarFrame_Shared "1" o-- "*" OperatingDay_Shared
 OperatingDay_Shared "1" o-- "*" DatedServiceJourney
 
 ServiceFrame "1" o-- "*" JourneyPattern
+ServiceFrame o-- Line
 
 TimetableFrame "1" o-- "*" ServiceJourney
 TimetableFrame "1" o-- "*" DatedServiceJourney
